@@ -28,7 +28,8 @@ if [ "${SKILL}" -eq 1 ] && [ ! -f "${SRC}/SKILL.md" ]; then
 fi
 
 CLAUDE_SKILLS="${CLAUDE_CONFIG_DIR:-${HOME}/.claude}/skills"
-AGY_SKILLS="${HOME}/.gemini/antigravity/skills"
+# agy (the Antigravity CLI) loads global skills from ~/.gemini/config/skills, not ~/.gemini/antigravity/skills (checked 2026-10-10).
+AGY_SKILLS="${HOME}/.gemini/config/skills"
 CODEX_SKILLS="${CODEX_HOME:-${HOME}/.codex}/skills"
 
 has() { command -v "$1" >/dev/null 2>&1; }

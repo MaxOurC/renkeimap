@@ -41,7 +41,7 @@ sh skills/renkeimap/scripts/connect.sh
 | Gemini CLI | `gemini mcp add --transport http --scope user renkeimap https://renkeimap.jp/mcp` | `gemini extensions install https://github.com/MaxOurC/renkeimap` |
 | Codex | `codex mcp add renkeimap --url https://renkeimap.jp/mcp` | `skills/renkeimap` を `~/.codex/skills/renkeimap` に置く |
 
-GitHub CLI があれば、SKILL だけをエージェントごとに入れることもできます: `gh skill install MaxOurC/renkeimap renkeimap --agent claude-code --scope user`（`--agent` は `gemini-cli`・`antigravity`・`codex` も可）。MCP サーバーは、SKILL が最初に使われるときに利用者に聞いてから繋ぎます。
+GitHub CLI があれば、SKILL だけをエージェントごとに入れることもできます: `gh skill install MaxOurC/renkeimap renkeimap --agent claude-code --scope user`（`--agent` は `gemini-cli`・`codex` も可）。Antigravity（agy）は `connect.sh` で入れてください — `gh skill` の `antigravity` の置き場（`~/.gemini/antigravity/skills`）を agy の CLI は読みません。MCP サーバーは、SKILL が最初に使われるときに利用者に聞いてから繋ぎます。
 
 ## このリポジトリの中身
 
@@ -61,9 +61,9 @@ GitHub CLI があれば、SKILL だけをエージェントごとに入れるこ
 | Claude Code | 2.1.251 | `plugin validate` 通過。このリポジトリをマーケットプレイスとして追加 → インストール → 有効になることを、別の設定ディレクトリで確かめた（公開後のリポジトリからも同じ）。プラグインの中身は SKILL 1・MCP サーバー 1 |
 | Antigravity（agy） | 1.3.2 | `plugin validate` 通過（SKILL 1・MCP サーバー 1）。プラグインを入れて「kintone と freee会計 は連携できる？」と聞くと、`renkeimap_find_system` → `renkeimap_pair` を呼び、出典（調査日と URL）付きで答えた |
 | Gemini CLI | 0.46.0 | `extensions validate` 通過。`gemini extensions install https://github.com/MaxOurC/renkeimap` で入れると MCP サーバーと SKILL が一覧に出た。答えまでは確かめていない（個人の Google アカウントではこの CLI からモデルを呼べなくなっている） |
-| GitHub CLI（`gh skill`） | 2.92.0 | `--agent` に claude-code・antigravity・gemini-cli・codex を渡すと、それぞれの SKILL のフォルダに置かれた（connect.sh と同じ場所） |
+| GitHub CLI（`gh skill`） | 2.92.0 | `--agent` に claude-code・gemini-cli・codex を渡すと、それぞれの SKILL のフォルダに置かれた（connect.sh と同じ場所）。`antigravity` を渡すと `~/.gemini/antigravity/skills` に置かれるが、agy（1.3.2）の CLI はそこを読まない（2026-10-10） |
 | Codex | 0.162.1 | `codex mcp add` で設定ファイルに書かれることを確かめた。作業フォルダの `.agents/skills/renkeimap` に SKILL を置いて「kintone と freee会計 は API で連携できる？」と聞くと、SKILL を読んでから `renkeimap_find_system` → `renkeimap_pair` を呼び、出典（調査日と URL）付きで答えた（`codex exec` で 1 回）。`~/.codex/skills` に置いた場合は確かめていない |
-| connect.sh | — | 別の HOME で、表示だけ・`--apply`（MCP と SKILL）・2 回目（在る物は飛ばす）・`--mcp-only`・SKILL.md が隣に無いとき・知らない旗、を確かめた（Claude Code・Gemini CLI・Antigravity）。Gemini CLI は `skills list` に SKILL が出た。Claude Code と Antigravity は SKILL のフォルダに置かれるところまでで、新しいセッションで読み込まれるかは確かめていない |
+| connect.sh | — | 別の HOME で、表示だけ・`--apply`（MCP と SKILL）・2 回目（在る物は飛ばす）・`--mcp-only`・SKILL.md が隣に無いとき・知らない旗、を確かめた（Claude Code・Gemini CLI・Antigravity）。Gemini CLI は `skills list` に SKILL が出た。Antigravity（agy）は `~/.gemini/config/skills` に置くと、新しいセッションの SKILL の一覧に出た（2026-10-10。それまでの版は agy が読まない場所に置いていた）。Claude Code は SKILL のフォルダに置かれるところまでで、新しいセッションで読み込まれるかは確かめていない |
 
 ## 注意
 
