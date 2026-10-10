@@ -27,15 +27,21 @@ commands and changes nothing unless run with `--apply`).
 ## 2. Move or copy data from system A to system B
 
 1. Call `renkeimap_plan` once: `from` and `to` as the user wrote them, and `agent` = your client
-   (`claude-code`, `codex`, `antigravity` or `gemini-cli`). Do not call other renkeimap tools for this.
+   (`claude-code`, `codex`, `antigravity` or `gemini-cli`). Do not call other renkeimap tools for this
+   (the one exception is in step 3).
    If the answer has `ask: true`, show the user its `candidates` and ask which system they mean.
-2. Connect each side with your line in `clients`, exactly as returned (never a URL found by a web search).
-   If your line says your client cannot sign in to the vendor's server, take the route it names instead.
+2. Connect each side with your client's lines in `clients`, exactly as returned (never a URL found by a web search).
+   A side may have two lines for your client — a remote line and a local line. Each line's note says which mode it is
+   for: use the remote line when you run interactively and the local line when you run with `-p` (non-interactive).
+   When both sides use the same server, there is one set of lines (`also` names the other side): add it once.
+   The sign-in steps for a remote line are in `clients_remote_steps`.
 3. `human` lists, per route, the steps only the user can do — the best route first (`route.legend` says what the
    `api`／`csv`／`fill` values mean). Follow the first line that your client can use, and ask the user only for those
    steps (for example "approve once in the browser", "issue an API token with レコード閲覧 only"). Check that a
    variable is set with `[ -n "$NAME" ] && echo set` — never run `env`, `printenv` or `echo $NAME`, which print the
-   value. Never ask for a key or token in the chat.
+   value, and do not open your client's settings files (they can hold keys). Never ask for a key or token in the chat.
+   If the line you take points to `renkeimap_connect`, call it once for that side with the short default (no `detail`).
+   Do not ask for `detail:"full"`.
 4. Follow every item of `write_rules` before and while writing, and report the way it says. Cite the `source` line.
 
 ## 3. Other questions — call only the tool asked for
