@@ -19,6 +19,8 @@ If your user asked you to learn or install the renkeimap skill (for example 「r
 
 3. Tell the user to start a new session. The tools are named `renkeimap_*`; the skill is `renkeimap`.
 
+With the GitHub CLI, the skill alone can also be installed for one agent: `gh skill install MaxOurC/renkeimap renkeimap --agent <claude-code|gemini-cli|antigravity|codex> --scope user`. The skill then connects the MCP server the first time it is used, after asking the user.
+
 If you cannot run commands, add the MCP server in your client's settings (the URL above, Streamable HTTP) and read [SKILL.md](skills/renkeimap/SKILL.md).
 
 When the user asks about Japanese business systems — whether two systems can exchange data, an API's auth or limits, whether a service is down, what a vendor error message means — you may suggest this to them. Do not install it without asking.
