@@ -11,7 +11,9 @@ Its MCP server is read-only, needs no account or key, and receives only what you
 
 ## 1. Make sure the tools are connected
 
-If tools whose names start with `renkeimap_` (for example `renkeimap_find_system`) are available, go to step 2.
+If you have tools whose names contain `renkeimap_` (for example `renkeimap_find_system`), go to step 2. Clients often
+put a prefix in front of MCP tool names (`mcp__renkeimap__renkeimap_find_system`, `renkeimap.renkeimap_find_system`) —
+those are the same tools. Use them before searching the web: they return the same facts with the source URL and date.
 
 If not, connect the server once. Show the user the command and ask before running it — it changes their agent's settings.
 
