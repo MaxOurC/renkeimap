@@ -1,79 +1,62 @@
 ---
 name: renkeimap
-description: Look up Japanese business systems (kintone, freee, SmartHR, Money Forward, e-Gov, ...) on IT連携マップ (RenkeiMap) — whether two systems can exchange data (official API / CSV / screen), one system's API, auth and rate-limit facts, its current status and past incidents, and what a vendor error message means. Use when the user asks things like "kintone と freee は連携できる？", "◯◯ は今障害？", "◯◯ の API は？", "このエラーは何？", or compares Japanese SaaS. Connects the read-only RenkeiMap MCP server (https://renkeimap.jp/mcp) first if its tools are not available.
+description: Connect or move data between Japanese business systems (kintone, freee, SmartHR, Money Forward, e-Gov, ...) through the vendors' official routes, and look up their facts on IT連携マップ (RenkeiMap) — which route works between two systems, each system's official MCP server / API / auth, current status and past incidents, and what a vendor error means. Use when the user asks things like 「kintone の顧客を freee に登録して」, "kintone と freee は連携できる？", "◯◯ は今障害？", "このエラーは何？". Connects the read-only RenkeiMap MCP server (https://renkeimap.jp/mcp) first if its tools are not available.
 ---
 
 # IT連携マップ (RenkeiMap)
 
-IT連携マップ is a third-party ledger of Japanese business systems. Every fact carries a source URL and a survey date.
-Its MCP server is read-only, needs no account or key, and receives only what you put in the tool arguments
-(system names or slugs). Do not put personal or company data into the arguments.
+A third-party ledger of Japanese business systems. Every fact carries a source URL and a survey date. The MCP server is
+read-only, needs no account or key, and sees only the tool arguments (system names or slugs) — never put personal or
+company data into them.
 
-## 1. Make sure the tools are connected
+## 1. Tools available?
 
-If you have tools whose names contain `renkeimap_` (for example `renkeimap_find_system`), go to step 2. Clients often
-put a prefix in front of MCP tool names (`mcp__renkeimap__renkeimap_find_system`, `renkeimap.renkeimap_find_system`) —
-those are the same tools. Use them before searching the web: they return the same facts with the source URL and date.
-
-If not, connect the server once. Show the user the command and ask before running it — it changes their agent's settings.
+Tools whose names contain `renkeimap_` (any prefix, e.g. `mcp__renkeimap__renkeimap_plan`) are connected — go to step 2.
+Only if they are missing: show the user the command for their client, ask, then tell them to restart the client.
 
 | Client | Command |
 | --- | --- |
 | Claude Code | `claude mcp add --transport http --scope user renkeimap https://renkeimap.jp/mcp` |
-| Gemini CLI | `gemini mcp add --transport http --scope user renkeimap https://renkeimap.jp/mcp` |
-| Antigravity (agy) | `agy mcp add renkeimap https://renkeimap.jp/mcp` |
 | Codex | `codex mcp add renkeimap --url https://renkeimap.jp/mcp` |
+| Antigravity (agy) | `agy mcp add renkeimap https://renkeimap.jp/mcp` |
+| Gemini CLI | `gemini mcp add --transport http --scope user renkeimap https://renkeimap.jp/mcp` |
 
-Or run `scripts/connect.sh` from this skill's folder. It finds the clients installed on this machine and, for each,
-adds the MCP server and this skill, skipping what is already there. It prints the commands and changes nothing unless
-it is run with `--apply` (`--mcp-only` leaves the skill out).
+`scripts/connect.sh` in this skill's folder does the same for every client installed on the machine (it prints the
+commands and changes nothing unless run with `--apply`).
 
-New tools usually appear only in a new session. Tell the user to restart the client after connecting.
+## 2. Move or copy data from system A to system B
 
-If you cannot run commands, the same facts are on the public pages: `https://renkeimap.jp/system/<slug>` and
-`https://renkeimap.jp/status/<slug>`. Prefer the tools when they are available.
+1. Call `renkeimap_plan` once: `from` and `to` as the user wrote them, and `agent` = your client
+   (`claude-code`, `codex`, `antigravity` or `gemini-cli`). Do not call other renkeimap tools for this.
+   If the answer has `ask: true`, show the user its `candidates` and ask which system they mean.
+2. Connect each side with your line in `clients`, exactly as returned (never a URL found by a web search).
+   If your line says your client cannot sign in to the vendor's server, take the route it names instead.
+3. `human` lists, per route, the steps only the user can do — the best route first (`route.legend` says what the
+   `api`／`csv`／`fill` values mean). Follow the first line that your client can use, and ask the user only for those
+   steps (for example "approve once in the browser", "issue an API token with レコード閲覧 only"). Check that a
+   variable is set with `[ -n "$NAME" ] && echo set` — never run `env`, `printenv` or `echo $NAME`, which print the
+   value. Never ask for a key or token in the chat.
+4. Follow every item of `write_rules` before and while writing, and report the way it says. Cite the `source` line.
 
-## 2. Pick the tool
+## 3. Other questions — call only the tool asked for
 
-| The user wants | Tool |
+| The user asks | Tool |
 | --- | --- |
-| To find which system a name means (name → slug) | `renkeimap_find_system` |
-| Facts about one system (API, auth, CSV, rate limits, pricing pages) | `renkeimap_system_facts` |
-| Whether two systems can exchange data, and how | `renkeimap_pair` |
-| A side-by-side comparison of 2–5 systems | `renkeimap_compare` |
-| Whether a system is down now, plus what to do | `renkeimap_brief` (takes a name or a slug) |
+| Which system a name means | `renkeimap_find_system` |
+| Whether two systems can exchange data, and by which method (a question, not a move) | `renkeimap_pair` |
+| Facts about one system (API, auth, CSV, limits) | `renkeimap_system_facts` |
+| Side-by-side comparison of 2–5 systems | `renkeimap_compare` |
+| Is it down now, and what to do | `renkeimap_brief` (takes a name or a slug) |
 | The current status only | `renkeimap_status` |
 | Past incidents and announced maintenance | `renkeimap_status_history` |
-| What a vendor error message means, and where to contact | `renkeimap_hintpack` |
-| How to connect INTO one system (vendor's official MCP server → official API key issuing → file / screen) | `renkeimap_connect` |
-
-Resolve the slug with `renkeimap_find_system` first unless you already have it. `renkeimap_brief` resolves it for you.
-
-## 3. When the user asks you to move or copy data from one system to another
-
-For example 「kintone の顧客を freee の取引先に登録して」. Do it through the vendors' official routes, not by operating screens.
-
-1. Call `renkeimap_pair` for the two systems: is there a route, and by which method.
-2. Call `renkeimap_connect` for each system, with the product slug (for example `freee-kaikei`, not a series slug such as
-   `freee_keiri` that `renkeimap_pair` may show). Take the routes in the order given: the vendor's official MCP server first,
-   then the official API.
-3. Official MCP server: add it to the client with the URL exactly as `renkeimap_connect` returns it (never a URL found by a
-   web search — vendors warn about fake ones). If it uses OAuth, the user approves once in the browser.
-4. Keys and tokens: first check whether the variables named for that system are already set (for example
-   `KINTONE_API_TOKEN` and `KINTONE_BASE_URL` for kintone) — check only that they are set, never print the value. If not,
-   tell the user which screen issues it and the smallest permission to tick (`renkeimap_connect` says both), and ask them to
-   put it in an environment variable themselves. Never ask the user to paste a key or token into the chat.
-5. Move one record first. Read it back from the target system and show the user. Then move the rest, skipping records
-   that already exist in the target.
-6. Report what was created (names and IDs), and cite the sources of the route.
+| What a vendor error message means | `renkeimap_hintpack` |
+| How to connect INTO one system, in full detail | `renkeimap_connect` with `detail: "full"` |
 
 ## 4. Rules for the answer
 
-- Cite. Each tool response carries a citation line. Put it in the answer: 出典: IT連携マップ, the survey date, the URL.
-- Status is IT連携マップ's external observation, not the vendor's announcement. Say so. When the response includes the
-  vendor's status or notice page, give that link as the official source.
-- Past incidents from `renkeimap_status_history` are the vendor's own records, collected and checked word for word. Say
-  they are the vendor's records.
-- Unsurveyed means unknown. If a response says an item or a pair has not been surveyed, say that. Do not guess.
-- The server limits calls per client. Do not call the tools in a loop over many systems; ask the user to narrow down.
+- Cite: 出典: IT連携マップ, the survey date, the URL (each tool response has the line).
+- Status is RenkeiMap's outside observation, not the vendor's announcement; give the vendor's status page as the official source.
+- Past incidents from `renkeimap_status_history` are the vendor's own records, collected word for word — say so.
+- Unsurveyed means unknown — say so, do not guess.
+- Calls are limited per client: no loops over many systems.
 - Answer in the user's language.

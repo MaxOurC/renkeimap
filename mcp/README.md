@@ -10,6 +10,7 @@
 
 | 名前 | 何を返すか |
 | --- | --- |
+| `renkeimap_plan` | 2 つのシステムを繋ぐ・データを移すときの案を 1 回で（道・両側の公式の接続先・人がする操作・CLI ごとの足し方・書き込みの守り） |
 | `renkeimap_find_system` | システムを名前で探す |
 | `renkeimap_system_facts` | 1 システムの事実（API・認証・接続の方式・出典） |
 | `renkeimap_pair` | 2 システムのあいだでデータを渡せるか、どの方法で |
@@ -18,7 +19,7 @@
 | `renkeimap_brief` | 探す・稼働状況・対処をまとめて 1 回で |
 | `renkeimap_status_history` | 提供元が公開している過去の障害と、告知されたメンテナンス |
 | `renkeimap_hintpack` | 画面に出たエラー文の意味と、最初に確かめること |
-| `renkeimap_connect` | 1 つのシステムに繋ぐ道を安定な順に（提供元の公式 MCP → 公式 API の鍵の発行 → ファイル／画面） |
+| `renkeimap_connect` | 1 つのシステムに繋ぐ道を安定な順に（提供元の公式 MCP → 公式 API の鍵の発行 → ファイル／画面）。既定は短い要約、`detail: "full"` で全文 |
 
 ## 繋ぎ方
 
