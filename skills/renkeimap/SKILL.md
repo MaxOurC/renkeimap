@@ -45,10 +45,29 @@ If you cannot run commands, the same facts are on the public pages: `https://ren
 | The current status only | `renkeimap_status` |
 | Past incidents and announced maintenance | `renkeimap_status_history` |
 | What a vendor error message means, and where to contact | `renkeimap_hintpack` |
+| How to connect INTO one system (vendor's official MCP server → official API key issuing → file / screen) | `renkeimap_connect` |
 
 Resolve the slug with `renkeimap_find_system` first unless you already have it. `renkeimap_brief` resolves it for you.
 
-## 3. Rules for the answer
+## 3. When the user asks you to move or copy data from one system to another
+
+For example 「kintone の顧客を freee の取引先に登録して」. Do it through the vendors' official routes, not by operating screens.
+
+1. Call `renkeimap_pair` for the two systems: is there a route, and by which method.
+2. Call `renkeimap_connect` for each system, with the product slug (for example `freee-kaikei`, not a series slug such as
+   `freee_keiri` that `renkeimap_pair` may show). Take the routes in the order given: the vendor's official MCP server first,
+   then the official API.
+3. Official MCP server: add it to the client with the URL exactly as `renkeimap_connect` returns it (never a URL found by a
+   web search — vendors warn about fake ones). If it uses OAuth, the user approves once in the browser.
+4. Keys and tokens: first check whether the variables named for that system are already set (for example
+   `KINTONE_API_TOKEN` and `KINTONE_BASE_URL` for kintone) — check only that they are set, never print the value. If not,
+   tell the user which screen issues it and the smallest permission to tick (`renkeimap_connect` says both), and ask them to
+   put it in an environment variable themselves. Never ask the user to paste a key or token into the chat.
+5. Move one record first. Read it back from the target system and show the user. Then move the rest, skipping records
+   that already exist in the target.
+6. Report what was created (names and IDs), and cite the sources of the route.
+
+## 4. Rules for the answer
 
 - Cite. Each tool response carries a citation line. Put it in the answer: 出典: IT連携マップ, the survey date, the URL.
 - Status is IT連携マップ's external observation, not the vendor's announcement. Say so. When the response includes the

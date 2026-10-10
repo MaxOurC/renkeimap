@@ -18,6 +18,7 @@
 | `renkeimap_brief` | 探す・稼働状況・対処をまとめて 1 回で |
 | `renkeimap_status_history` | 提供元が公開している過去の障害と、告知されたメンテナンス |
 | `renkeimap_hintpack` | 画面に出たエラー文の意味と、最初に確かめること |
+| `renkeimap_connect` | 1 つのシステムに繋ぐ道を安定な順に（提供元の公式 MCP → 公式 API の鍵の発行 → ファイル／画面） |
 
 ## 繋ぎ方
 
