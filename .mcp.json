@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "renkeimap": {
+      "type": "http",
+      "url": "https://renkeimap.jp/mcp"
+    }
+  }
+}

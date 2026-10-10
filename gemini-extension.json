@@ -1,0 +1,11 @@
+{
+  "name": "renkeimap",
+  "version": "0.1.0",
+  "description": "IT連携マップ (RenkeiMap): read-only MCP server for Japanese business systems — API facts, whether two systems connect, current status, past incidents, error messages.",
+  "mcpServers": {
+    "renkeimap": {
+      "url": "https://renkeimap.jp/mcp",
+      "type": "http"
+    }
+  }
+}

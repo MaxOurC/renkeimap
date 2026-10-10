@@ -1,0 +1,13 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "jp.renkeimap/renkeimap-info",
+  "description": "日本の業務システムの API・認証・接続方式・稼働状況を、出典と調査日つきで返す読み取り専用 MCP（IT連携マップ）",
+  "version": "0.1.0",
+  "websiteUrl": "https://renkeimap.jp/guide/learn/our-mcp-server",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://renkeimap.jp/mcp"
+    }
+  ]
+}

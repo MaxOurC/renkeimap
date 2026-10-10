@@ -1,0 +1,14 @@
+{
+  "name": "renkeimap",
+  "description": "IT連携マップ (RenkeiMap) — plugins that let AI agents use the RenkeiMap MCP server for Japanese business systems.",
+  "owner": {
+    "name": "IT連携マップ編集部"
+  },
+  "plugins": [
+    {
+      "name": "renkeimap",
+      "source": "./",
+      "description": "IT連携マップ (RenkeiMap): connects the read-only RenkeiMap MCP server and teaches the agent when to use it — Japanese business systems' API facts, whether two systems connect, current status, past incidents, error messages."
+    }
+  ]
+}
