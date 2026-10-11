@@ -1,0 +1,1015 @@
+{
+ "schema": 1,
+ "license": "CC-BY-4.0",
+ "attribution": "IT連携マップ（https://renkeimap.jp/）",
+ "about": "https://renkeimap.jp/",
+ "count": 87,
+ "status_pages": [
+  {
+   "slug": "air-work",
+   "name": "Airワーク 採用管理",
+   "page_url": "https://faq.rct.airwork.net/api/v2/help_center/ja/articles/57726482090777.json",
+   "tags": [
+    "メンテナンス",
+    "お知らせ"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-08-10",
+   "url": "https://renkeimap.jp/system/air-work"
+  },
+  {
+   "slug": "andpad",
+   "name": "ANDPAD",
+   "page_url": "https://www.andpadstatus.jp/",
+   "tags": [
+    "ステータス",
+    "Webhook",
+    "過去の障害履歴"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-08-09",
+   "url": "https://renkeimap.jp/system/andpad"
+  },
+  {
+   "slug": "bakuraku",
+   "name": "バクラク",
+   "page_url": "https://bakuraku.jp/terms/common/",
+   "tags": [
+    "障害の履歴は無く",
+    "稼働状況は別アドレス"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-09-18",
+   "url": "https://renkeimap.jp/system/bakuraku"
+  },
+  {
+   "slug": "base",
+   "name": "BASE",
+   "page_url": "https://help.thebase.in/hc/ja/sections/56469971390745-%E9%9A%9C%E5%AE%B3-%E3%83%A1%E3%83%B3%E3%83%86%E3%83%8A%E3%83%B3%E3%82%B9%E6%83%85%E5%A0%B1",
+   "tags": [
+    "障害・メンテナンス情報"
+   ],
+   "basis": "measured",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/base"
+  },
+  {
+   "slug": "board",
+   "name": "board",
+   "page_url": "https://www.the-board-status.jp/",
+   "tags": [
+    "専用ステータスページ",
+    "3 システムを表示",
+    "RSS/Atom"
+   ],
+   "basis": "measured",
+   "checked_on": "2026-08-01",
+   "url": "https://renkeimap.jp/system/board"
+  },
+  {
+   "slug": "bownow",
+   "name": "BowNow",
+   "page_url": "https://faq.bow-now.jp/hc/ja/articles/43704885385497",
+   "tags": [
+    "障害・メンテナンス",
+    "稼働状況"
+   ],
+   "basis": "measured",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/bownow"
+  },
+  {
+   "slug": "buildee",
+   "name": "Buildee 労務安全",
+   "page_url": "https://service.buildee.jp/info/systeminfo/",
+   "tags": [
+    "障害情報",
+    "メンテナンス",
+    "履歴が残る"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/buildee"
+  },
+  {
+   "slug": "ccus",
+   "name": "CCUS",
+   "page_url": "https://www.ccus.jp/p/news",
+   "tags": [
+    "最新情報",
+    "停止告知"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/ccus"
+  },
+  {
+   "slug": "ccus",
+   "name": "CCUS",
+   "page_url": "https://www.ccus.jp/p/news",
+   "basis": "measured",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/ccus"
+  },
+  {
+   "slug": "chatwork",
+   "name": "Chatwork",
+   "page_url": "https://help.chatwork.com/hc/ja/sections/201963352",
+   "tags": [
+    "メンテナンス",
+    "復旧",
+    "日付つき"
+   ],
+   "basis": "measured",
+   "checked_on": "2026-10-09",
+   "url": "https://renkeimap.jp/system/chatwork"
+  },
+  {
+   "slug": "clius",
+   "name": "CLIUS",
+   "page_url": "https://clius.jp/personalinfo/",
+   "basis": "measured",
+   "checked_on": "2026-08-14",
+   "url": "https://renkeimap.jp/system/clius"
+  },
+  {
+   "slug": "comiru",
+   "name": "Comiru",
+   "page_url": "https://comiru.jp/news",
+   "basis": "measured",
+   "checked_on": "2026-08-14",
+   "url": "https://renkeimap.jp/system/comiru"
+  },
+  {
+   "slug": "cybozu-office",
+   "name": "サイボウズ Office",
+   "page_url": "https://status.cybozu.com/",
+   "tags": [
+    "稼働状況ページ",
+    "障害情報"
+   ],
+   "basis": "measured",
+   "checked_on": "2026-08-09",
+   "url": "https://renkeimap.jp/system/cybozu-office"
+  },
+  {
+   "slug": "dotto-genka",
+   "name": "どっと原価",
+   "page_url": "https://www.kendweb.net/",
+   "tags": [
+    "お知らせ欄に掲載",
+    "日付つき"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-08-14",
+   "url": "https://renkeimap.jp/system/dotto-genka"
+  },
+  {
+   "slug": "e-gov",
+   "name": "e-Gov電子申請",
+   "page_url": "https://developer.e-gov.go.jp/",
+   "tags": [
+    "稼働状況",
+    "メンテナンス情報"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-08-10",
+   "url": "https://renkeimap.jp/system/e-gov"
+  },
+  {
+   "slug": "e-naiyo-shomei",
+   "name": "e内容証明",
+   "page_url": "https://webyubin.jpi.post.japanpost.jp/webyubin/snt/DYFR900.do",
+   "tags": [
+    "お知らせ",
+    "システム障害"
+   ],
+   "basis": "measured",
+   "checked_on": "2026-08-10",
+   "url": "https://renkeimap.jp/system/e-naiyo-shomei"
+  },
+  {
+   "slug": "e-tax",
+   "name": "e-Tax",
+   "page_url": "https://www.e-tax.nta.go.jp/topics/index.htm",
+   "tags": [
+    "お知らせ一覧",
+    "日付つきで残る",
+    "専用ステータスページなし"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-08-05",
+   "url": "https://renkeimap.jp/system/e-tax"
+  },
+  {
+   "slug": "eltax-pcdesk",
+   "name": "eLTAX / PCdesk",
+   "page_url": "https://www.eltax.lta.go.jp/news/16294",
+   "tags": [
+    "お知らせ",
+    "表示不具合",
+    "復旧報"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-08-10",
+   "url": "https://renkeimap.jp/system/eltax-pcdesk"
+  },
+  {
+   "slug": "formrun",
+   "name": "formrun",
+   "page_url": "https://form.run/home/slo",
+   "tags": [
+    "SLO",
+    "サービス稼働率",
+    "告知"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-08-09",
+   "url": "https://renkeimap.jp/system/formrun"
+  },
+  {
+   "slug": "freee-jinji",
+   "name": "freee人事労務",
+   "page_url": "https://status.freee.co.jp/",
+   "tags": [
+    "専用ステータスページ",
+    "アプリ別に表示"
+   ],
+   "basis": "measured",
+   "checked_on": "2026-08-02",
+   "url": "https://renkeimap.jp/system/freee-jinji"
+  },
+  {
+   "slug": "freee-kaikei",
+   "name": "freee会計",
+   "page_url": "https://status.freee.co.jp/",
+   "tags": [
+    "専用ステータスページ",
+    "API を個別表示",
+    "障害履歴あり"
+   ],
+   "basis": "measured",
+   "checked_on": "2026-08-01",
+   "url": "https://renkeimap.jp/system/freee-kaikei"
+  },
+  {
+   "slug": "freee-shinkoku",
+   "name": "freee申告",
+   "page_url": "https://www.freee.co.jp/tax-filing/",
+   "tags": [
+    "サービス稼働状況"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-08-10",
+   "url": "https://renkeimap.jp/system/freee-shinkoku"
+  },
+  {
+   "slug": "g-id",
+   "name": "GビズID",
+   "page_url": "https://gbiz-id.go.jp/top/",
+   "tags": [
+    "重要なお知らせ",
+    "メンテナンス",
+    "不具合"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-08-10",
+   "url": "https://renkeimap.jp/system/g-id"
+  },
+  {
+   "slug": "garoon",
+   "name": "Garoon",
+   "page_url": "https://status.cybozu.com/",
+   "tags": [
+    "status.cybozu.com"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-08-09",
+   "url": "https://renkeimap.jp/system/garoon"
+  },
+  {
+   "slug": "genba-plus",
+   "name": "現場Plus",
+   "page_url": "https://www.kensetsu-cloud.jp/maintenance/",
+   "tags": [
+    "稼動状況ページあり",
+    "SLO 稼働率 99.99%"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/genba-plus"
+  },
+  {
+   "slug": "google-classroom",
+   "name": "Google Classroom",
+   "page_url": "https://www.google.com/appsstatus/dashboard/",
+   "tags": [
+    "全体のダッシュボード"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-08-10",
+   "url": "https://renkeimap.jp/system/google-classroom"
+  },
+  {
+   "slug": "google-forms",
+   "name": "Google フォーム",
+   "page_url": "https://www.google.com/appsstatus/dashboard/",
+   "tags": [
+    "全体のダッシュボード"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-08-09",
+   "url": "https://renkeimap.jp/system/google-forms"
+  },
+  {
+   "slug": "google-sheets",
+   "name": "Google スプレッドシート",
+   "page_url": "https://www.google.com/appsstatus/dashboard/",
+   "tags": [
+    "全体のダッシュボード"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-08-09",
+   "url": "https://renkeimap.jp/system/google-sheets"
+  },
+  {
+   "slug": "google-workspace",
+   "name": "Google Workspace",
+   "page_url": "https://www.google.com/appsstatus/dashboard/",
+   "tags": [
+    "サービスごとに稼働状況"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-08-09",
+   "url": "https://renkeimap.jp/system/google-workspace"
+  },
+  {
+   "slug": "graffer",
+   "name": "Grafferスマート申請",
+   "page_url": "https://graffer.jp/legal/whitepaper",
+   "tags": [
+    "72時間",
+    "管理画面"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-08-10",
+   "url": "https://renkeimap.jp/system/graffer"
+  },
+  {
+   "slug": "greenfile-work",
+   "name": "Greenfile.work",
+   "page_url": "https://greenfile.work/news/maintenance",
+   "tags": [
+    "専用ページあり",
+    "履歴が残る",
+    "2019年〜"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-10-09",
+   "url": "https://renkeimap.jp/system/greenfile-work"
+  },
+  {
+   "slug": "greensite",
+   "name": "グリーンサイト",
+   "page_url": "https://www.kensetsu-site.com/news/?category=maintenance",
+   "tags": [
+    "メンテナンス",
+    "ログイン画面"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/greensite"
+  },
+  {
+   "slug": "hubspot",
+   "name": "HubSpot",
+   "page_url": "https://status.hubspot.com/",
+   "tags": [
+    "障害履歴を公開",
+    "メール通知"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-08-09",
+   "url": "https://renkeimap.jp/system/hubspot"
+  },
+  {
+   "slug": "ielove-bb",
+   "name": "いえらぶBB",
+   "page_url": "https://bb.ielove.jp/",
+   "basis": "measured",
+   "checked_on": "2026-09-07",
+   "url": "https://renkeimap.jp/system/ielove-bb"
+  },
+  {
+   "slug": "invox",
+   "name": "invox",
+   "page_url": "https://invox.jp/terms",
+   "tags": [
+    "稼働状況ページは見当たらない",
+    "一時中断できる"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-08-09",
+   "url": "https://renkeimap.jp/system/invox"
+  },
+  {
+   "slug": "jcip",
+   "name": "JCIP（建設業許可電子申請）",
+   "page_url": "https://prod.jcip.mlit.go.jp/TO/TO00001",
+   "tags": [
+    "お知らせ21件",
+    "2:00〜23:50",
+    "事前告知"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/jcip"
+  },
+  {
+   "slug": "jgrants",
+   "name": "jGrants",
+   "page_url": "https://www.jgrants-portal.go.jp/",
+   "basis": "measured",
+   "checked_on": "2026-09-07",
+   "url": "https://renkeimap.jp/system/jgrants"
+  },
+  {
+   "slug": "jidosha-oss",
+   "name": "自動車OSS",
+   "page_url": "https://www.oss.mlit.go.jp/portal/beginner/faq/index.html",
+   "tags": [
+    "お知らせで告知",
+    "障害"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/jidosha-oss"
+  },
+  {
+   "slug": "jidosha-oss",
+   "name": "自動車OSS",
+   "page_url": "https://www.oss.mlit.go.jp/portal/assets/data/newsData.json",
+   "basis": "measured",
+   "checked_on": "2026-10-10",
+   "url": "https://renkeimap.jp/system/jidosha-oss"
+  },
+  {
+   "slug": "jinjer",
+   "name": "ジンジャー",
+   "page_url": "https://jinjer.zendesk.com/hc/ja/articles/900002198283",
+   "tags": [
+    "稼働状況ページ",
+    "機能別に表示"
+   ],
+   "basis": "measured",
+   "checked_on": "2026-08-02",
+   "url": "https://renkeimap.jp/system/jinjer"
+  },
+  {
+   "slug": "jobcan-kaikei",
+   "name": "ジョブカン会計",
+   "page_url": "https://all.jobcan.ne.jp/systemstatus/",
+   "tags": [
+    "シリーズ共通ページ",
+    "現在値のみ"
+   ],
+   "basis": "measured",
+   "checked_on": "2026-08-05",
+   "url": "https://renkeimap.jp/system/jobcan-kaikei"
+  },
+  {
+   "slug": "jobcan-kintai",
+   "name": "ジョブカン勤怠管理",
+   "page_url": "https://all.jobcan.ne.jp/systemstatus/",
+   "tags": [
+    "シリーズ共通ページ",
+    "9 サービスを 4 段階"
+   ],
+   "basis": "measured",
+   "checked_on": "2026-08-01",
+   "url": "https://renkeimap.jp/system/jobcan-kintai"
+  },
+  {
+   "slug": "jobcan-kyuyo",
+   "name": "ジョブカン給与計算",
+   "page_url": "https://all.jobcan.ne.jp/systemstatus/",
+   "tags": [
+    "シリーズ共通ページ",
+    "9 サービス"
+   ],
+   "basis": "measured",
+   "checked_on": "2026-08-02",
+   "url": "https://renkeimap.jp/system/jobcan-kyuyo"
+  },
+  {
+   "slug": "jobcan-romu-hr",
+   "name": "ジョブカン労務HR",
+   "page_url": "https://all.jobcan.ne.jp/systemstatus/",
+   "tags": [
+    "シリーズ共通ページ",
+    "9 サービス"
+   ],
+   "basis": "measured",
+   "checked_on": "2026-08-02",
+   "url": "https://renkeimap.jp/system/jobcan-romu-hr"
+  },
+  {
+   "slug": "jotform",
+   "name": "Jotform",
+   "page_url": "https://www.jotform.com/security/",
+   "tags": [
+    "status.jotform.com"
+   ],
+   "basis": "measured",
+   "checked_on": "2026-08-14",
+   "url": "https://renkeimap.jp/system/jotform"
+  },
+  {
+   "slug": "kaonavi",
+   "name": "カオナビ",
+   "page_url": "https://www.kaonavi.jp/support/",
+   "basis": "measured",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/kaonavi"
+  },
+  {
+   "slug": "kaonavi",
+   "name": "カオナビ",
+   "page_url": "https://developer.kaonavi.jp/api/v2.0/index.html",
+   "tags": [
+    "メンテナンス"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/kaonavi"
+  },
+  {
+   "slug": "king-of-time",
+   "name": "KING OF TIME",
+   "page_url": "https://status.kingoftime.jp/",
+   "tags": [
+    "専用ステータスページ",
+    "10 コンポーネント別",
+    "履歴あり"
+   ],
+   "basis": "measured",
+   "checked_on": "2026-08-02",
+   "url": "https://renkeimap.jp/system/king-of-time"
+  },
+  {
+   "slug": "king-of-time",
+   "name": "KING OF TIME",
+   "page_url": "https://www.kingoftime.jp/costlist/cost/",
+   "basis": "measured",
+   "checked_on": "2026-08-02",
+   "url": "https://renkeimap.jp/system/king-of-time"
+  },
+  {
+   "slug": "kintone",
+   "name": "kintone",
+   "page_url": "https://status.cybozu.com/",
+   "tags": [
+    "専用ステータスページ",
+    "告知 API あり"
+   ],
+   "basis": "measured",
+   "checked_on": "2026-08-04",
+   "url": "https://renkeimap.jp/system/kintone"
+  },
+  {
+   "slug": "kuraemon",
+   "name": "蔵衛門",
+   "page_url": "https://www.kuraemon.com/news/",
+   "tags": [
+    "お知らせ",
+    "不具合告知",
+    "ステータスページなし"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/kuraemon"
+  },
+  {
+   "slug": "line-works",
+   "name": "LINE WORKS",
+   "page_url": "https://line-works.com/notice/service/line-works/",
+   "tags": [
+    "お知らせ",
+    "メンテナンス",
+    "サービス状態"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/line-works"
+  },
+  {
+   "slug": "logoform",
+   "name": "LoGoForm",
+   "page_url": "https://publitech.fun/logoform_failure",
+   "tags": [
+    "障害のお知らせ",
+    "影響範囲"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-08-10",
+   "url": "https://renkeimap.jp/system/logoform"
+  },
+  {
+   "slug": "microsoft-excel",
+   "name": "Microsoft Excel",
+   "page_url": "https://learn.microsoft.com/ja-jp/microsoft-365/enterprise/view-service-health",
+   "tags": [
+    "サービス正常性",
+    "過去 7 日または 30 日"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-09-09",
+   "url": "https://renkeimap.jp/system/microsoft-excel"
+  },
+  {
+   "slug": "microsoft-forms",
+   "name": "Microsoft Forms",
+   "page_url": "https://learn.microsoft.com/ja-jp/microsoft-365/enterprise/view-service-health?view=o365-worldwide",
+   "tags": [
+    "サービス正常性",
+    "インシデント",
+    "アドバイザリ"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-08-09",
+   "url": "https://renkeimap.jp/system/microsoft-forms"
+  },
+  {
+   "slug": "misoca",
+   "name": "Misoca",
+   "page_url": "https://www.yayoi-kk.co.jp/operational_status/",
+   "tags": [
+    "サービス稼働状況",
+    "Misoca"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-08-09",
+   "url": "https://renkeimap.jp/system/misoca"
+  },
+  {
+   "slug": "moneyforward-cloud-jinji",
+   "name": "マネーフォワード クラウド人事管理",
+   "page_url": "https://biz.moneyforward.com/support/employee/",
+   "tags": [
+    "重要なお知らせ",
+    "メンテナンス・窓口営業のお知らせ",
+    "定期メンテナンス"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-08-14",
+   "url": "https://renkeimap.jp/system/moneyforward-cloud-jinji"
+  },
+  {
+   "slug": "moneyforward-cloud-kaikei",
+   "name": "マネーフォワード クラウド会計",
+   "page_url": "https://biz.moneyforward.com/support/news",
+   "tags": [
+    "専用ページなし",
+    "サポートサイトで告知"
+   ],
+   "basis": "measured",
+   "checked_on": "2026-08-01",
+   "url": "https://renkeimap.jp/system/moneyforward-cloud-kaikei"
+  },
+  {
+   "slug": "moneyforward-cloud-kaikei",
+   "name": "マネーフォワード クラウド会計",
+   "page_url": "https://biz.moneyforward.com/support/account/faq/environment/e01.html",
+   "basis": "vendor",
+   "checked_on": "2026-08-01",
+   "url": "https://renkeimap.jp/system/moneyforward-cloud-kaikei"
+  },
+  {
+   "slug": "moneyforward-cloud-keihi",
+   "name": "マネーフォワード クラウド経費",
+   "page_url": "https://biz.moneyforward.com/support/expense/faq",
+   "tags": [
+    "専用ページなし",
+    "サポートサイトで告知"
+   ],
+   "basis": "measured",
+   "checked_on": "2026-08-02",
+   "url": "https://renkeimap.jp/system/moneyforward-cloud-keihi"
+  },
+  {
+   "slug": "moneyforward-cloud-kyuyo",
+   "name": "マネーフォワード クラウド給与",
+   "page_url": "https://biz.moneyforward.com/support/",
+   "tags": [
+    "メンテナンス・窓口営業のお知らせ",
+    "定期メンテナンス情報"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-08-09",
+   "url": "https://renkeimap.jp/system/moneyforward-cloud-kyuyo"
+  },
+  {
+   "slug": "moneyforward-cloud-seikyusho",
+   "name": "マネーフォワード クラウド請求書",
+   "page_url": "https://biz.moneyforward.com/support/invoice/news/",
+   "tags": [
+    "解消済み",
+    "定期メンテナンス情報"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-08-10",
+   "url": "https://renkeimap.jp/system/moneyforward-cloud-seikyusho"
+  },
+  {
+   "slug": "moneyforward-cloud-shaho",
+   "name": "マネーフォワード クラウド社会保険",
+   "page_url": "https://biz.moneyforward.com/support/",
+   "tags": [
+    "メンテナンス・窓口営業のお知らせ",
+    "定期メンテナンス"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-08-12",
+   "url": "https://renkeimap.jp/system/moneyforward-cloud-shaho"
+  },
+  {
+   "slug": "movo-berth",
+   "name": "MOVO Berth",
+   "page_url": "https://hacobu.jp/security/",
+   "tags": [
+    "稼働率99.99%",
+    "インシデント"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-08-10",
+   "url": "https://renkeimap.jp/system/movo-berth"
+  },
+  {
+   "slug": "notion",
+   "name": "Notion",
+   "page_url": "https://www.notion-status.com/",
+   "tags": [
+    "www.notion-status.com",
+    "履歴",
+    "RSS"
+   ],
+   "basis": "measured",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/notion"
+  },
+  {
+   "slug": "nyusatsu-joho-service",
+   "name": "入札情報サービス（電子入札コア系）",
+   "page_url": "https://www.i-ppi.jp/IPPI/SearchServices/Web/Announce/zenkoku_20260902.htm",
+   "tags": [
+    "障害情報",
+    "メンテナンス情報",
+    "過去のお知らせ"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/nyusatsu-joho-service"
+  },
+  {
+   "slug": "nyusatsu-joho-service",
+   "name": "入札情報サービス（電子入札コア系）",
+   "page_url": "https://www.i-ppi.jp/IPPI/SearchServices/Web/Announce/pastinfo.htm",
+   "basis": "measured",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/nyusatsu-joho-service"
+  },
+  {
+   "slug": "office-station",
+   "name": "オフィスステーション",
+   "page_url": "https://www.officestation.jp/topics/notice/17933/",
+   "tags": [
+    "稼働率",
+    "メンテナンス",
+    "99.9％"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/office-station"
+  },
+  {
+   "slug": "photoruction",
+   "name": "Photoruction",
+   "page_url": "https://www.photoruction.com/archives/11799",
+   "basis": "vendor",
+   "checked_on": "2026-09-23",
+   "url": "https://renkeimap.jp/system/photoruction"
+  },
+  {
+   "slug": "pittari-service",
+   "name": "ぴったりサービス",
+   "page_url": "https://myna.go.jp/html/info/index.html",
+   "tags": [
+    "障害情報",
+    "メンテナンス"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/pittari-service"
+  },
+  {
+   "slug": "rakuraku-seisan",
+   "name": "楽楽精算",
+   "page_url": "https://support.rakus.co.jp/seisan/",
+   "tags": [
+    "稼働状態ページ",
+    "ログイン不要"
+   ],
+   "basis": "measured",
+   "checked_on": "2026-08-01",
+   "url": "https://renkeimap.jp/system/rakuraku-seisan"
+  },
+  {
+   "slug": "salesforce-platform",
+   "name": "Salesforce Platform",
+   "page_url": "https://status.salesforce.com/",
+   "tags": [
+    "インスタンス単位の稼働状況"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-08-10",
+   "url": "https://renkeimap.jp/system/salesforce-platform"
+  },
+  {
+   "slug": "salesforce-sales-cloud",
+   "name": "Salesforce Sales Cloud",
+   "page_url": "https://status.salesforce.com/",
+   "tags": [
+    "インスタンス単位で公開"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-08-10",
+   "url": "https://renkeimap.jp/system/salesforce-sales-cloud"
+  },
+  {
+   "slug": "sansan",
+   "name": "Sansan",
+   "page_url": "https://jp-help.sansan.com/api/v2/help_center/ja/articles/13013063940889.json",
+   "tags": [
+    "サービス稼働状況",
+    "2022年11月以降の履歴",
+    "フィード"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-09-18",
+   "url": "https://renkeimap.jp/system/sansan"
+  },
+  {
+   "slug": "shopify",
+   "name": "Shopify",
+   "page_url": "https://www.shopify.com/jp",
+   "tags": [
+    "サービスステータス"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-08-09",
+   "url": "https://renkeimap.jp/system/shopify"
+  },
+  {
+   "slug": "slack",
+   "name": "Slack",
+   "page_url": "https://api.slack.com/apis",
+   "tags": [
+    "Slack Status API",
+    "Atom",
+    "RSS"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-08-09",
+   "url": "https://renkeimap.jp/system/slack"
+  },
+  {
+   "slug": "smarthr",
+   "name": "SmartHR",
+   "page_url": "https://smarthr.jp/about/security/",
+   "tags": [
+    "専用ページなし",
+    "ヘルプで告知",
+    "履歴あり"
+   ],
+   "basis": "measured",
+   "checked_on": "2026-08-01",
+   "url": "https://renkeimap.jp/system/smarthr"
+  },
+  {
+   "slug": "smarthr",
+   "name": "SmartHR",
+   "page_url": "https://support.smarthr.jp/ja/info/status/page/1/",
+   "basis": "vendor",
+   "checked_on": "2026-08-01",
+   "url": "https://renkeimap.jp/system/smarthr"
+  },
+  {
+   "slug": "spiderplus",
+   "name": "SPIDERPLUS",
+   "page_url": "https://spider-plus.com/environment/",
+   "tags": [
+    "稼働状況",
+    "既知不具合"
+   ],
+   "basis": "measured",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/spiderplus"
+  },
+  {
+   "slug": "tkc-fx2-cloud",
+   "name": "TKC FX2クラウド",
+   "page_url": "https://www.tkc.jp/company/topics/",
+   "basis": "measured",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/tkc-fx2-cloud"
+  },
+  {
+   "slug": "tkc-kaikei",
+   "name": "TKC 会計事務所システム",
+   "page_url": "https://www.tkc.jp/company/topics/2024/20241216/",
+   "tags": [
+    "お知らせ",
+    "復旧"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/tkc-kaikei"
+  },
+  {
+   "slug": "tokium",
+   "name": "TOKIUM",
+   "page_url": "https://corp.tokium.jp/security_whitepaper/",
+   "tags": [
+    "稼働状況",
+    "メール",
+    "事前通知"
+   ],
+   "basis": "measured",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/tokium"
+  },
+  {
+   "slug": "touki-net",
+   "name": "登記ねっと",
+   "page_url": "https://www.touki-kyoutaku-online.moj.go.jp/condition.html",
+   "tags": [
+    "運転状況",
+    "メンテナンス"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/touki-net"
+  },
+  {
+   "slug": "yahoo-pro",
+   "name": "Yahoo!ショッピング ストアクリエイターPro",
+   "page_url": "https://developer.yahoo.co.jp/changelog/shopping.html",
+   "tags": [
+    "更新履歴を公開",
+    "障害告知も掲載",
+    "履歴が残る"
+   ],
+   "basis": "measured",
+   "checked_on": "2026-08-05",
+   "url": "https://renkeimap.jp/system/yahoo-pro"
+  },
+  {
+   "slug": "yayoi",
+   "name": "弥生（会計/青色申告 オンライン/Next）",
+   "page_url": "https://www.yayoi-kk.co.jp/operational_status/index.html",
+   "tags": [
+    "稼働状況ページ",
+    "50 超の対象",
+    "3 段階表示"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-08-01",
+   "url": "https://renkeimap.jp/system/yayoi"
+  },
+  {
+   "slug": "zairyu-shinsei-online",
+   "name": "在留申請オンライン",
+   "page_url": "https://www.moj.go.jp/isa/applications/online/online-QA.html",
+   "tags": [
+    "メンテナンス",
+    "お知らせ"
+   ],
+   "basis": "vendor",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/zairyu-shinsei-online"
+  },
+  {
+   "slug": "zoho-crm",
+   "name": "Zoho CRM",
+   "page_url": "https://status.zoho.jp/",
+   "tags": [
+    "日本向けステータスページ",
+    "サービス別に稼働率を表示",
+    "障害履歴の一覧は未確認"
+   ],
+   "basis": "measured",
+   "checked_on": "2026-08-05",
+   "url": "https://renkeimap.jp/system/zoho-crm"
+  }
+ ]
+}

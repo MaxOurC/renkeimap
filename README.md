@@ -86,6 +86,10 @@ sh skills/renkeimap/scripts/connect.sh
 | 上限 | 1 回に返す件数に上限があり、接続元ごとに 1 日 500 回まで |
 | 稼働状況 | IT連携マップが外から見た観測です。提供元の公式発表ではありません |
 
+## データ（data/）
+
+業務システムの索引を JSON で置いています: 系統ごとの方式（API・CSV・画面・MCP）の有無と確認等級、公式 API の認証と鍵を誰が発行するか、提供元の API 仕様と稼働状況の告知の場所。どの行にも確かめた日・出典の URL・renkeimap.jp の URL が付いています。欄の読み方は [data/README.md](data/README.md)。
+
 ## リンク
 
 - サイト: https://renkeimap.jp/
@@ -95,6 +99,6 @@ sh skills/renkeimap/scripts/connect.sh
 
 ## ライセンス
 
-[MIT](LICENSE)（このリポジトリのコード・設定・説明）。
+[MIT](LICENSE)（このリポジトリのコード・設定・説明）。`data/` のデータは [CC BY 4.0](data/LICENSE)（「IT連携マップ」と https://renkeimap.jp/ へのリンクを表示）。
 
 運営: IT連携マップ編集部

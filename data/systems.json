@@ -1,0 +1,1350 @@
+{
+ "schema": 1,
+ "license": "CC-BY-4.0",
+ "attribution": "IT連携マップ（https://renkeimap.jp/）",
+ "about": "https://renkeimap.jp/",
+ "count": 87,
+ "systems": [
+  {
+   "slug": "air-work",
+   "name": "Airワーク 採用管理",
+   "vendor": "リクルート",
+   "category": "採用",
+   "url": "https://renkeimap.jp/system/air-work",
+   "surveyed_on": "2026-08-10",
+   "methods": []
+  },
+  {
+   "slug": "andpad",
+   "name": "ANDPAD",
+   "vendor": "アンドパッド",
+   "category": "建設",
+   "url": "https://renkeimap.jp/system/andpad",
+   "surveyed_on": "2026-08-09",
+   "methods": []
+  },
+  {
+   "slug": "bakuraku",
+   "name": "バクラク",
+   "vendor": "LayerX",
+   "category": "経費・請求",
+   "url": "https://renkeimap.jp/system/bakuraku",
+   "surveyed_on": "2026-09-03",
+   "methods": [
+    {
+     "method": "api",
+     "read": true,
+     "write": true,
+     "grade": 3,
+     "checked_on": "2026-08-11",
+     "source_url": "https://joint-data.com/connector/bakuraku"
+    }
+   ]
+  },
+  {
+   "slug": "base",
+   "name": "BASE",
+   "vendor": "BASE",
+   "category": "EC",
+   "url": "https://renkeimap.jp/system/base",
+   "surveyed_on": "2026-09-03",
+   "methods": [
+    {
+     "method": "api",
+     "read": true,
+     "write": true,
+     "grade": 3,
+     "checked_on": "2026-08-02",
+     "source_url": "https://lp.yoom.fun/apps"
+    }
+   ]
+  },
+  {
+   "slug": "board",
+   "name": "board",
+   "vendor": "ヴェルク",
+   "category": "経費・請求",
+   "url": "https://renkeimap.jp/system/board",
+   "surveyed_on": "2026-08-01",
+   "methods": [
+    {
+     "method": "api",
+     "read": true,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-08-07",
+     "source_url": "https://developers.the-board.jp/doc/board_openapi.json"
+    },
+    {
+     "method": "csv_export",
+     "read": true,
+     "write": false,
+     "grade": 5,
+     "checked_on": "2026-08-07",
+     "source_url": "https://the-board.jp/helps/help_export_to_yayoi_v2"
+    }
+   ]
+  },
+  {
+   "slug": "bownow",
+   "name": "BowNow",
+   "vendor": "クラウドサーカス",
+   "category": "CRM / SFA / MA",
+   "url": "https://renkeimap.jp/system/bownow",
+   "surveyed_on": "2026-09-03",
+   "methods": [
+    {
+     "method": "api",
+     "read": true,
+     "write": true,
+     "grade": 4,
+     "checked_on": "2026-08-11",
+     "source_url": "https://joint-data.com/connector/BowNow"
+    }
+   ]
+  },
+  {
+   "slug": "buildee",
+   "name": "Buildee 労務安全",
+   "vendor": "リバスタ",
+   "category": "建設",
+   "url": "https://renkeimap.jp/system/buildee",
+   "surveyed_on": "2026-09-03",
+   "methods": []
+  },
+  {
+   "slug": "caretree",
+   "name": "ケア樹",
+   "vendor": "グッドツリー",
+   "category": "医療・介護",
+   "url": "https://renkeimap.jp/system/caretree",
+   "surveyed_on": "2026-08-10",
+   "methods": []
+  },
+  {
+   "slug": "ccus",
+   "name": "CCUS",
+   "vendor": "建設業振興基金",
+   "category": "建設",
+   "url": "https://renkeimap.jp/system/ccus",
+   "surveyed_on": "2026-09-03",
+   "methods": []
+  },
+  {
+   "slug": "chatwork",
+   "name": "Chatwork",
+   "vendor": "kubell",
+   "category": "ビジネスチャット",
+   "url": "https://renkeimap.jp/system/chatwork",
+   "surveyed_on": "2026-09-03",
+   "methods": [
+    {
+     "method": "api",
+     "read": true,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-08-19",
+     "source_url": "https://developer.chatwork.com/reference"
+    }
+   ]
+  },
+  {
+   "slug": "clius",
+   "name": "CLIUS",
+   "vendor": "DONUTS",
+   "category": "医療・介護",
+   "url": "https://renkeimap.jp/system/clius",
+   "surveyed_on": "2026-08-14",
+   "methods": []
+  },
+  {
+   "slug": "comiru",
+   "name": "Comiru",
+   "vendor": "POPER",
+   "category": "教育",
+   "url": "https://renkeimap.jp/system/comiru",
+   "surveyed_on": "2026-08-14",
+   "methods": []
+  },
+  {
+   "slug": "cybozu-office",
+   "name": "サイボウズ Office",
+   "vendor": "サイボウズ",
+   "category": "グループウェア・社内ポータル",
+   "url": "https://renkeimap.jp/system/cybozu-office",
+   "surveyed_on": "2026-08-09",
+   "methods": []
+  },
+  {
+   "slug": "dandori-work",
+   "name": "ダンドリワーク",
+   "vendor": "ダンドリワーク",
+   "category": "建設",
+   "url": "https://renkeimap.jp/system/dandori-work",
+   "surveyed_on": "2026-08-10",
+   "methods": [
+    {
+     "method": "api",
+     "read": true,
+     "write": true,
+     "grade": 3,
+     "checked_on": "2026-08-02",
+     "source_url": "https://lp.yoom.fun/apps"
+    }
+   ]
+  },
+  {
+   "slug": "dotto-genka",
+   "name": "どっと原価",
+   "vendor": "建設ドットウェブ",
+   "category": "建設",
+   "url": "https://renkeimap.jp/system/dotto-genka",
+   "surveyed_on": "2026-08-14",
+   "methods": []
+  },
+  {
+   "slug": "e-gov",
+   "name": "e-Gov電子申請",
+   "vendor": "デジタル庁",
+   "category": "士業・行政申請",
+   "url": "https://renkeimap.jp/system/e-gov",
+   "surveyed_on": "2026-08-10",
+   "methods": [
+    {
+     "method": "api",
+     "read": true,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-08-19",
+     "source_url": "https://developer.e-gov.go.jp/sites/default/files/filebrowser/e-gov/redoc/redoc-static.html"
+    },
+    {
+     "method": "document",
+     "read": false,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-08-10",
+     "source_url": "https://developer.e-gov.go.jp/sites/default/files/filebrowser/specification/koyou_20260417_all_0.zip"
+    }
+   ]
+  },
+  {
+   "slug": "e-naiyo-shomei",
+   "name": "e内容証明",
+   "vendor": "日本郵便",
+   "category": "士業・行政申請",
+   "url": "https://renkeimap.jp/system/e-naiyo-shomei",
+   "surveyed_on": "2026-08-10",
+   "methods": []
+  },
+  {
+   "slug": "e-tax",
+   "name": "e-Tax",
+   "vendor": "国税庁",
+   "category": "会計・税務",
+   "url": "https://renkeimap.jp/system/e-tax",
+   "surveyed_on": "2026-08-05",
+   "methods": [
+    {
+     "method": "document",
+     "read": false,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-08-07",
+     "source_url": "https://www.e-tax.nta.go.jp/e-taxsoftweb/hoteichosho/csv1/soft_all.xlsx"
+    }
+   ]
+  },
+  {
+   "slug": "e-tumo",
+   "name": "e-TUMO",
+   "vendor": "NTTデータ関西",
+   "category": "官公庁・補助金",
+   "url": "https://renkeimap.jp/system/e-tumo",
+   "surveyed_on": "2026-08-10",
+   "methods": []
+  },
+  {
+   "slug": "eltax-pcdesk",
+   "name": "eLTAX / PCdesk",
+   "vendor": "地方税共同機構",
+   "category": "会計・税務",
+   "url": "https://renkeimap.jp/system/eltax-pcdesk",
+   "surveyed_on": "2026-08-10",
+   "methods": []
+  },
+  {
+   "slug": "filemaker",
+   "name": "FileMaker",
+   "vendor": "Claris（Apple 子会社）",
+   "category": "業務アプリ作成・ノーコード DB",
+   "url": "https://renkeimap.jp/system/filemaker",
+   "surveyed_on": "2026-09-10",
+   "methods": [
+    {
+     "method": "api",
+     "read": true,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-09-10",
+     "source_url": "https://help.claris.com/ja/data-api-guide/content/index.html"
+    }
+   ]
+  },
+  {
+   "slug": "formrun",
+   "name": "formrun",
+   "vendor": "ベーシック",
+   "category": "フォーム・予約受付",
+   "url": "https://renkeimap.jp/system/formrun",
+   "surveyed_on": "2026-08-09",
+   "methods": []
+  },
+  {
+   "slug": "freee-jinji",
+   "name": "freee人事労務",
+   "vendor": "freee",
+   "category": "人事労務・勤怠",
+   "url": "https://renkeimap.jp/system/freee-jinji",
+   "surveyed_on": "2026-08-02",
+   "methods": [
+    {
+     "method": "api",
+     "read": true,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-08-07",
+     "source_url": "https://raw.githubusercontent.com/freee/freee-api-schema/master/hr/open-api-3/api-schema.json"
+    }
+   ]
+  },
+  {
+   "slug": "freee-kaikei",
+   "name": "freee会計",
+   "vendor": "freee",
+   "category": "会計・税務",
+   "url": "https://renkeimap.jp/system/freee-kaikei",
+   "surveyed_on": "2026-08-01",
+   "methods": [
+    {
+     "method": "api",
+     "read": true,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-08-11",
+     "source_url": "https://joint-data.com/connector/freeekaikei"
+    },
+    {
+     "method": "csv_export",
+     "read": true,
+     "write": false,
+     "grade": 5,
+     "checked_on": "2026-08-07",
+     "source_url": "https://support.freee.co.jp/hc/ja/articles/204615564"
+    },
+    {
+     "method": "csv_import",
+     "read": false,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-08-07",
+     "source_url": "https://support.freee.co.jp/hc/ja/articles/23583052555161"
+    },
+    {
+     "method": "screen",
+     "read": false,
+     "write": true,
+     "grade": 6,
+     "checked_on": "2026-08-07",
+     "source_url": "https://support.freee.co.jp/hc/ja/articles/12513731930649"
+    }
+   ]
+  },
+  {
+   "slug": "freee-shinkoku",
+   "name": "freee申告",
+   "vendor": "freee",
+   "category": "会計・税務",
+   "url": "https://renkeimap.jp/system/freee-shinkoku",
+   "surveyed_on": "2026-08-10",
+   "methods": []
+  },
+  {
+   "slug": "g-id",
+   "name": "GビズID",
+   "vendor": "デジタル庁",
+   "category": "官公庁・補助金",
+   "url": "https://renkeimap.jp/system/g-id",
+   "surveyed_on": "2026-08-10",
+   "methods": []
+  },
+  {
+   "slug": "garoon",
+   "name": "Garoon",
+   "vendor": "サイボウズ",
+   "category": "グループウェア・社内ポータル",
+   "url": "https://renkeimap.jp/system/garoon",
+   "surveyed_on": "2026-08-09",
+   "methods": [
+    {
+     "method": "api",
+     "read": true,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-08-19",
+     "source_url": "https://cybozu.dev/ja/garoon/docs/rest-api/overview/"
+    }
+   ]
+  },
+  {
+   "slug": "genba-plus",
+   "name": "現場Plus",
+   "vendor": "ダイテック",
+   "category": "建設",
+   "url": "https://renkeimap.jp/system/genba-plus",
+   "surveyed_on": "2026-09-03",
+   "methods": [
+    {
+     "method": "api",
+     "read": true,
+     "write": false,
+     "grade": 3,
+     "checked_on": "2026-08-02",
+     "source_url": "https://lp.yoom.fun/apps"
+    }
+   ]
+  },
+  {
+   "slug": "google-classroom",
+   "name": "Google Classroom",
+   "vendor": "Google",
+   "category": "教育",
+   "url": "https://renkeimap.jp/system/google-classroom",
+   "surveyed_on": "2026-08-10",
+   "methods": [
+    {
+     "method": "api",
+     "read": true,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-08-11",
+     "source_url": "https://www.googleapis.com/discovery/v1/apis/classroom/v1/rest"
+    }
+   ]
+  },
+  {
+   "slug": "google-forms",
+   "name": "Google フォーム",
+   "vendor": "Google",
+   "category": "フォーム・予約受付",
+   "url": "https://renkeimap.jp/system/google-forms",
+   "surveyed_on": "2026-08-09",
+   "methods": [
+    {
+     "method": "api",
+     "read": true,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-08-19",
+     "source_url": "https://forms.googleapis.com/$discovery/rest?version=v1"
+    }
+   ]
+  },
+  {
+   "slug": "google-sheets",
+   "name": "Google スプレッドシート",
+   "vendor": "Google",
+   "category": "表計算・BI",
+   "url": "https://renkeimap.jp/system/google-sheets",
+   "surveyed_on": "2026-08-09",
+   "methods": [
+    {
+     "method": "api",
+     "read": true,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-08-19",
+     "source_url": "https://sheets.googleapis.com/$discovery/rest?version=v4"
+    }
+   ]
+  },
+  {
+   "slug": "google-workspace",
+   "name": "Google Workspace",
+   "vendor": "Google",
+   "category": "グループウェア・社内ポータル",
+   "url": "https://renkeimap.jp/system/google-workspace",
+   "surveyed_on": "2026-08-09",
+   "methods": [
+    {
+     "method": "api",
+     "read": true,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-08-19",
+     "source_url": "https://www.googleapis.com/discovery/v1/apis/admin/directory_v1/rest"
+    }
+   ]
+  },
+  {
+   "slug": "graffer",
+   "name": "Grafferスマート申請",
+   "vendor": "グラファー",
+   "category": "官公庁・補助金",
+   "url": "https://renkeimap.jp/system/graffer",
+   "surveyed_on": "2026-08-10",
+   "methods": []
+  },
+  {
+   "slug": "greenfile-work",
+   "name": "Greenfile.work",
+   "vendor": "シェルフィー",
+   "category": "建設",
+   "url": "https://renkeimap.jp/system/greenfile-work",
+   "surveyed_on": "2026-09-03",
+   "methods": []
+  },
+  {
+   "slug": "greensite",
+   "name": "グリーンサイト",
+   "vendor": "エムシーディースリー",
+   "category": "建設",
+   "url": "https://renkeimap.jp/system/greensite",
+   "surveyed_on": "2026-09-03",
+   "methods": []
+  },
+  {
+   "slug": "hubspot",
+   "name": "HubSpot",
+   "vendor": "HubSpot",
+   "category": "CRM / SFA / MA",
+   "url": "https://renkeimap.jp/system/hubspot",
+   "surveyed_on": "2026-08-09",
+   "methods": [
+    {
+     "method": "api",
+     "read": true,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-08-19",
+     "source_url": "https://api.hubapi.com/public/api/spec/v1/specs"
+    }
+   ]
+  },
+  {
+   "slug": "ielove-bb",
+   "name": "いえらぶBB",
+   "vendor": "いえらぶGROUP",
+   "category": "不動産",
+   "url": "https://renkeimap.jp/system/ielove-bb",
+   "surveyed_on": "2026-08-09",
+   "methods": []
+  },
+  {
+   "slug": "ielove-cloud",
+   "name": "いえらぶCLOUD",
+   "vendor": "いえらぶGROUP",
+   "category": "不動産",
+   "url": "https://renkeimap.jp/system/ielove-cloud",
+   "surveyed_on": "2026-08-10",
+   "methods": []
+  },
+  {
+   "slug": "invox",
+   "name": "invox",
+   "vendor": "invox",
+   "category": "経費・請求",
+   "url": "https://renkeimap.jp/system/invox",
+   "surveyed_on": "2026-08-09",
+   "methods": [
+    {
+     "method": "api",
+     "read": true,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-08-19",
+     "source_url": "https://invox.jp/api/"
+    }
+   ]
+  },
+  {
+   "slug": "jcip",
+   "name": "JCIP（建設業許可電子申請）",
+   "vendor": "国土交通省",
+   "category": "建設",
+   "url": "https://renkeimap.jp/system/jcip",
+   "surveyed_on": "2026-09-03",
+   "methods": []
+  },
+  {
+   "slug": "jgrants",
+   "name": "jGrants",
+   "vendor": "デジタル庁・経産省",
+   "category": "官公庁・補助金",
+   "url": "https://renkeimap.jp/system/jgrants",
+   "surveyed_on": "2026-08-09",
+   "methods": [
+    {
+     "method": "document",
+     "read": false,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-08-07",
+     "source_url": "https://it-shien.smrj.go.jp/pdf/it2026_manual_it_jigyosha.pdf"
+    }
+   ]
+  },
+  {
+   "slug": "jidosha-oss",
+   "name": "自動車OSS",
+   "vendor": "国土交通省",
+   "category": "士業・行政申請",
+   "url": "https://renkeimap.jp/system/jidosha-oss",
+   "surveyed_on": "2026-09-03",
+   "methods": []
+  },
+  {
+   "slug": "jinjer",
+   "name": "ジンジャー",
+   "vendor": "jinjer",
+   "category": "人事労務・勤怠",
+   "url": "https://renkeimap.jp/system/jinjer",
+   "surveyed_on": "2026-08-02",
+   "methods": [
+    {
+     "method": "api",
+     "read": true,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-08-19",
+     "source_url": "https://doc.api.jinjer.biz/openapi/openapi.yaml"
+    }
+   ]
+  },
+  {
+   "slug": "jobcan-kaikei",
+   "name": "ジョブカン会計",
+   "vendor": "DONUTS",
+   "category": "会計・税務",
+   "url": "https://renkeimap.jp/system/jobcan-kaikei",
+   "surveyed_on": "2026-08-05",
+   "methods": [
+    {
+     "method": "api",
+     "read": true,
+     "write": false,
+     "grade": 5,
+     "checked_on": "2026-08-19",
+     "source_url": "https://sbx.ac.jobcan.jp/ascommon/api/api_doc.html"
+    }
+   ]
+  },
+  {
+   "slug": "jobcan-kintai",
+   "name": "ジョブカン勤怠管理",
+   "vendor": "DONUTS",
+   "category": "人事労務・勤怠",
+   "url": "https://renkeimap.jp/system/jobcan-kintai",
+   "surveyed_on": "2026-08-01",
+   "methods": [
+    {
+     "method": "csv_export",
+     "read": true,
+     "write": false,
+     "grade": 5,
+     "checked_on": "2026-08-07",
+     "source_url": "https://jobcan.zendesk.com/hc/ja/articles/205211775"
+    },
+    {
+     "method": "csv_import",
+     "read": false,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-08-07",
+     "source_url": "https://jobcan.zendesk.com/hc/ja/articles/201103925"
+    }
+   ]
+  },
+  {
+   "slug": "jobcan-kyuyo",
+   "name": "ジョブカン給与計算",
+   "vendor": "DONUTS",
+   "category": "人事労務・勤怠",
+   "url": "https://renkeimap.jp/system/jobcan-kyuyo",
+   "surveyed_on": "2026-08-02",
+   "methods": []
+  },
+  {
+   "slug": "jobcan-romu-hr",
+   "name": "ジョブカン労務HR",
+   "vendor": "DONUTS",
+   "category": "人事労務・勤怠",
+   "url": "https://renkeimap.jp/system/jobcan-romu-hr",
+   "surveyed_on": "2026-08-02",
+   "methods": []
+  },
+  {
+   "slug": "jotform",
+   "name": "Jotform",
+   "vendor": "Jotform",
+   "category": "フォーム・予約受付",
+   "url": "https://renkeimap.jp/system/jotform",
+   "surveyed_on": "2026-08-14",
+   "methods": [
+    {
+     "method": "api",
+     "read": true,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-08-19",
+     "source_url": "https://api.jotform.com/docs/"
+    }
+   ]
+  },
+  {
+   "slug": "kaonavi",
+   "name": "カオナビ",
+   "vendor": "カオナビ",
+   "category": "人事労務・勤怠",
+   "url": "https://renkeimap.jp/system/kaonavi",
+   "surveyed_on": "2026-09-03",
+   "methods": [
+    {
+     "method": "api",
+     "read": true,
+     "write": true,
+     "grade": 4,
+     "checked_on": "2026-08-11",
+     "source_url": "https://joint-data.com/connector/kaonavi"
+    }
+   ]
+  },
+  {
+   "slug": "king-of-time",
+   "name": "KING OF TIME",
+   "vendor": "ヒューマンテクノロジーズ",
+   "category": "人事労務・勤怠",
+   "url": "https://renkeimap.jp/system/king-of-time",
+   "surveyed_on": "2026-08-02",
+   "methods": [
+    {
+     "method": "api",
+     "read": true,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-08-11",
+     "source_url": "https://joint-data.com/connector/KINGOFTIME"
+    }
+   ]
+  },
+  {
+   "slug": "kintone",
+   "name": "kintone",
+   "vendor": "サイボウズ",
+   "category": "業務アプリ作成・ノーコード DB",
+   "url": "https://renkeimap.jp/system/kintone",
+   "surveyed_on": "2026-08-04",
+   "methods": [
+    {
+     "method": "api",
+     "read": true,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-08-11",
+     "source_url": "https://docs.autoro.io/actions/kintone.html"
+    },
+    {
+     "method": "csv_export",
+     "read": true,
+     "write": false,
+     "grade": 5,
+     "checked_on": "2026-08-02",
+     "source_url": "https://jp.kintone.help/k/ja/app/data/import_export.html"
+    },
+    {
+     "method": "csv_import",
+     "read": false,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-08-02",
+     "source_url": "https://jp.kintone.help/k/ja/app/data/import_export.html"
+    },
+    {
+     "method": "mcp",
+     "read": true,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-08-07",
+     "source_url": "https://github.com/kintone/mcp-server"
+    },
+    {
+     "method": "screen",
+     "read": false,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-07-28",
+     "source_url": "https://kintone-sol.cybozu.co.jp/integrate/"
+    }
+   ]
+  },
+  {
+   "slug": "kuraemon",
+   "name": "蔵衛門",
+   "vendor": "ルクレ",
+   "category": "建設",
+   "url": "https://renkeimap.jp/system/kuraemon",
+   "surveyed_on": "2026-09-03",
+   "methods": []
+  },
+  {
+   "slug": "line-works",
+   "name": "LINE WORKS",
+   "vendor": "LINE WORKS",
+   "category": "ビジネスチャット",
+   "url": "https://renkeimap.jp/system/line-works",
+   "surveyed_on": "2026-09-03",
+   "methods": [
+    {
+     "method": "api",
+     "read": true,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-08-19",
+     "source_url": "https://developers.worksmobile.com/jp/docs"
+    }
+   ]
+  },
+  {
+   "slug": "logoform",
+   "name": "LoGoForm",
+   "vendor": "トラストバンク",
+   "category": "官公庁・補助金",
+   "url": "https://renkeimap.jp/system/logoform",
+   "surveyed_on": "2026-08-10",
+   "methods": []
+  },
+  {
+   "slug": "microsoft-excel",
+   "name": "Microsoft Excel",
+   "vendor": "Microsoft",
+   "category": "表計算・BI",
+   "url": "https://renkeimap.jp/system/microsoft-excel",
+   "surveyed_on": "2026-09-09",
+   "methods": [
+    {
+     "method": "api",
+     "read": true,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-09-10",
+     "source_url": "https://learn.microsoft.com/ja-jp/graph/api/resources/excel"
+    }
+   ]
+  },
+  {
+   "slug": "microsoft-forms",
+   "name": "Microsoft Forms",
+   "vendor": "Microsoft",
+   "category": "フォーム・予約受付",
+   "url": "https://renkeimap.jp/system/microsoft-forms",
+   "surveyed_on": "2026-08-09",
+   "methods": []
+  },
+  {
+   "slug": "misoca",
+   "name": "Misoca",
+   "vendor": "弥生",
+   "category": "経費・請求",
+   "url": "https://renkeimap.jp/system/misoca",
+   "surveyed_on": "2026-08-09",
+   "methods": [
+    {
+     "method": "api",
+     "read": true,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-08-09",
+     "source_url": "https://app.misoca.jp/api/v3/swagger_doc"
+    }
+   ]
+  },
+  {
+   "slug": "moneyforward-cloud-jinji",
+   "name": "マネーフォワード クラウド人事管理",
+   "vendor": "マネーフォワード",
+   "category": "人事労務・勤怠",
+   "url": "https://renkeimap.jp/system/moneyforward-cloud-jinji",
+   "surveyed_on": "2026-08-14",
+   "methods": []
+  },
+  {
+   "slug": "moneyforward-cloud-kaikei",
+   "name": "マネーフォワード クラウド会計",
+   "vendor": "マネーフォワード",
+   "category": "会計・税務",
+   "url": "https://renkeimap.jp/system/moneyforward-cloud-kaikei",
+   "surveyed_on": "2026-08-01",
+   "methods": [
+    {
+     "method": "api",
+     "read": true,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-08-19",
+     "source_url": "https://developers.api-accounting.moneyforward.com/v3/openapi.yaml"
+    },
+    {
+     "method": "csv_export",
+     "read": true,
+     "write": false,
+     "grade": 5,
+     "checked_on": "2026-08-07",
+     "source_url": "https://biz.moneyforward.com/support/account/guide/books2/bo01.html"
+    },
+    {
+     "method": "csv_import",
+     "read": false,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-08-07",
+     "source_url": "https://biz.moneyforward.com/support/account/guide/import-books/ib01.html"
+    }
+   ]
+  },
+  {
+   "slug": "moneyforward-cloud-keihi",
+   "name": "マネーフォワード クラウド経費",
+   "vendor": "マネーフォワード",
+   "category": "経費・請求",
+   "url": "https://renkeimap.jp/system/moneyforward-cloud-keihi",
+   "surveyed_on": "2026-08-02",
+   "methods": [
+    {
+     "method": "api",
+     "read": true,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-08-11",
+     "source_url": "https://joint-data.com/connector/mfkeihi"
+    },
+    {
+     "method": "csv_export",
+     "read": true,
+     "write": false,
+     "grade": 5,
+     "checked_on": "2026-08-08",
+     "source_url": "https://biz.moneyforward.com/support/expense/guide/admin-ma/ma35.html"
+    },
+    {
+     "method": "csv_import",
+     "read": false,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-08-08",
+     "source_url": "https://biz.moneyforward.com/support/expense/guide/ap/ap31.html"
+    },
+    {
+     "method": "screen",
+     "read": false,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-08-08",
+     "source_url": "https://biz.moneyforward.com/support/expense/guide/admin-ex/ex31.html"
+    }
+   ]
+  },
+  {
+   "slug": "moneyforward-cloud-kyuyo",
+   "name": "マネーフォワード クラウド給与",
+   "vendor": "マネーフォワード",
+   "category": "人事労務・勤怠",
+   "url": "https://renkeimap.jp/system/moneyforward-cloud-kyuyo",
+   "surveyed_on": "2026-08-09",
+   "methods": [
+    {
+     "method": "api",
+     "read": true,
+     "write": false,
+     "grade": 5,
+     "checked_on": "2026-08-12",
+     "source_url": "https://payroll.moneyforward.com/api/v2/schema"
+    }
+   ]
+  },
+  {
+   "slug": "moneyforward-cloud-seikyusho",
+   "name": "マネーフォワード クラウド請求書",
+   "vendor": "マネーフォワード",
+   "category": "経費・請求",
+   "url": "https://renkeimap.jp/system/moneyforward-cloud-seikyusho",
+   "surveyed_on": "2026-08-10",
+   "methods": [
+    {
+     "method": "api",
+     "read": true,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-08-19",
+     "source_url": "https://invoice.moneyforward.com/docs/api/v3/reference/iv_web_api.yaml"
+    },
+    {
+     "method": "csv_import",
+     "read": false,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-08-08",
+     "source_url": "https://biz.moneyforward.com/support/invoice/guide/document02/do019.html"
+    },
+    {
+     "method": "screen",
+     "read": false,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-08-08",
+     "source_url": "https://biz.moneyforward.com/support/invoice/guide/document02/do04.html"
+    }
+   ]
+  },
+  {
+   "slug": "moneyforward-cloud-shaho",
+   "name": "マネーフォワード クラウド社会保険",
+   "vendor": "マネーフォワード",
+   "category": "人事労務・勤怠",
+   "url": "https://renkeimap.jp/system/moneyforward-cloud-shaho",
+   "surveyed_on": "2026-08-12",
+   "methods": []
+  },
+  {
+   "slug": "movo-berth",
+   "name": "MOVO Berth",
+   "vendor": "Hacobu",
+   "category": "運輸・物流",
+   "url": "https://renkeimap.jp/system/movo-berth",
+   "surveyed_on": "2026-08-10",
+   "methods": []
+  },
+  {
+   "slug": "notion",
+   "name": "Notion",
+   "vendor": "Notion Labs",
+   "category": "業務アプリ作成・ノーコード DB",
+   "url": "https://renkeimap.jp/system/notion",
+   "surveyed_on": "2026-09-03",
+   "methods": [
+    {
+     "method": "api",
+     "read": true,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-08-19",
+     "source_url": "https://developers.notion.com/openapi.json"
+    }
+   ]
+  },
+  {
+   "slug": "nyusatsu-joho-service",
+   "name": "入札情報サービス（電子入札コア系）",
+   "vendor": "JACIC・SCOPE（提供）（2026-09-03 一次調査で訂正）",
+   "category": "官公庁・補助金",
+   "url": "https://renkeimap.jp/system/nyusatsu-joho-service",
+   "surveyed_on": "2026-09-03",
+   "methods": []
+  },
+  {
+   "slug": "office-station",
+   "name": "オフィスステーション",
+   "vendor": "エフアンドエム",
+   "category": "人事労務・勤怠",
+   "url": "https://renkeimap.jp/system/office-station",
+   "surveyed_on": "2026-09-03",
+   "methods": [
+    {
+     "method": "api",
+     "read": true,
+     "write": true,
+     "grade": 3,
+     "checked_on": "2026-08-02",
+     "source_url": "https://lp.yoom.fun/apps"
+    }
+   ]
+  },
+  {
+   "slug": "photoruction",
+   "name": "Photoruction",
+   "vendor": "フォトラクション",
+   "category": "建設",
+   "url": "https://renkeimap.jp/system/photoruction",
+   "surveyed_on": "2026-09-03",
+   "methods": []
+  },
+  {
+   "slug": "pittari-service",
+   "name": "ぴったりサービス",
+   "vendor": "デジタル庁",
+   "category": "官公庁・補助金",
+   "url": "https://renkeimap.jp/system/pittari-service",
+   "surveyed_on": "2026-09-03",
+   "methods": []
+  },
+  {
+   "slug": "rakuraku-seisan",
+   "name": "楽楽精算",
+   "vendor": "ラクス",
+   "category": "経費・請求",
+   "url": "https://renkeimap.jp/system/rakuraku-seisan",
+   "surveyed_on": "2026-08-01",
+   "methods": [
+    {
+     "method": "api",
+     "read": true,
+     "write": false,
+     "grade": 3,
+     "checked_on": "2026-08-11",
+     "source_url": "https://joint-data.com/connector/RakuRakuSeisan"
+    },
+    {
+     "method": "csv_export",
+     "read": true,
+     "write": false,
+     "grade": 5,
+     "checked_on": "2026-08-07",
+     "source_url": "https://support.freee.co.jp/hc/ja/articles/360026803471"
+    }
+   ]
+  },
+  {
+   "slug": "rakuten-rms",
+   "name": "楽天RMS",
+   "vendor": "楽天",
+   "category": "EC",
+   "url": "https://renkeimap.jp/system/rakuten-rms",
+   "surveyed_on": "2026-09-09",
+   "methods": []
+  },
+  {
+   "slug": "salesforce-platform",
+   "name": "Salesforce Platform",
+   "vendor": "Salesforce",
+   "category": "業務アプリ作成・ノーコード DB",
+   "url": "https://renkeimap.jp/system/salesforce-platform",
+   "surveyed_on": "2026-08-10",
+   "methods": []
+  },
+  {
+   "slug": "salesforce-sales-cloud",
+   "name": "Salesforce Sales Cloud",
+   "vendor": "Salesforce",
+   "category": "CRM / SFA / MA",
+   "url": "https://renkeimap.jp/system/salesforce-sales-cloud",
+   "surveyed_on": "2026-08-10",
+   "methods": [
+    {
+     "method": "api",
+     "read": true,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-08-19",
+     "source_url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_list.htm"
+    }
+   ]
+  },
+  {
+   "slug": "sansan",
+   "name": "Sansan",
+   "vendor": "Sansan",
+   "category": "CRM / SFA / MA",
+   "url": "https://renkeimap.jp/system/sansan",
+   "surveyed_on": "2026-09-03",
+   "methods": [
+    {
+     "method": "api",
+     "read": true,
+     "write": true,
+     "grade": 4,
+     "checked_on": "2026-08-11",
+     "source_url": "https://www.asteria.com/jp/warp/feature/option/sansan"
+    }
+   ]
+  },
+  {
+   "slug": "shopify",
+   "name": "Shopify",
+   "vendor": "Shopify",
+   "category": "EC",
+   "url": "https://renkeimap.jp/system/shopify",
+   "surveyed_on": "2026-08-09",
+   "methods": [
+    {
+     "method": "api",
+     "read": true,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-08-19",
+     "source_url": "https://shopify.dev/docs/api/admin-rest"
+    }
+   ]
+  },
+  {
+   "slug": "slack",
+   "name": "Slack",
+   "vendor": "Salesforce",
+   "category": "ビジネスチャット",
+   "url": "https://renkeimap.jp/system/slack",
+   "surveyed_on": "2026-08-09",
+   "methods": [
+    {
+     "method": "api",
+     "read": true,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-08-19",
+     "source_url": "https://raw.githubusercontent.com/slackapi/slack-api-specs/master/web-api/slack_web_openapi_v2.json"
+    }
+   ]
+  },
+  {
+   "slug": "smarthr",
+   "name": "SmartHR",
+   "vendor": "SmartHR",
+   "category": "人事労務・勤怠",
+   "url": "https://renkeimap.jp/system/smarthr",
+   "surveyed_on": "2026-08-01",
+   "methods": [
+    {
+     "method": "api",
+     "read": true,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-08-11",
+     "source_url": "https://joint-data.com/connector/SmartHR"
+    }
+   ]
+  },
+  {
+   "slug": "spiderplus",
+   "name": "SPIDERPLUS",
+   "vendor": "スパイダープラス",
+   "category": "建設",
+   "url": "https://renkeimap.jp/system/spiderplus",
+   "surveyed_on": "2026-09-03",
+   "methods": []
+  },
+  {
+   "slug": "tkc-fx2-cloud",
+   "name": "TKC FX2クラウド",
+   "vendor": "TKC",
+   "category": "会計・税務",
+   "url": "https://renkeimap.jp/system/tkc-fx2-cloud",
+   "surveyed_on": "2026-09-03",
+   "methods": []
+  },
+  {
+   "slug": "tkc-kaikei",
+   "name": "TKC 会計事務所システム",
+   "vendor": "TKC",
+   "category": "士業・行政申請",
+   "url": "https://renkeimap.jp/system/tkc-kaikei",
+   "surveyed_on": "2026-09-03",
+   "methods": []
+  },
+  {
+   "slug": "tokium",
+   "name": "TOKIUM",
+   "vendor": "TOKIUM",
+   "category": "経費・請求",
+   "url": "https://renkeimap.jp/system/tokium",
+   "surveyed_on": "2026-09-03",
+   "methods": [
+    {
+     "method": "api",
+     "read": true,
+     "write": true,
+     "grade": 3,
+     "checked_on": "2026-08-02",
+     "source_url": "https://lp.yoom.fun/apps"
+    }
+   ]
+  },
+  {
+   "slug": "touki-net",
+   "name": "登記ねっと",
+   "vendor": "法務省",
+   "category": "士業・行政申請",
+   "url": "https://renkeimap.jp/system/touki-net",
+   "surveyed_on": "2026-09-03",
+   "methods": []
+  },
+  {
+   "slug": "wizdom",
+   "name": "WIZDOM",
+   "vendor": "BREXA Technology",
+   "category": "建設",
+   "url": "https://renkeimap.jp/system/wizdom",
+   "surveyed_on": "2026-09-03",
+   "methods": []
+  },
+  {
+   "slug": "yahoo-pro",
+   "name": "Yahoo!ショッピング ストアクリエイターPro",
+   "vendor": "LINEヤフー",
+   "category": "EC",
+   "url": "https://renkeimap.jp/system/yahoo-pro",
+   "surveyed_on": "2026-08-05",
+   "methods": [
+    {
+     "method": "api",
+     "read": true,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-08-12",
+     "source_url": "https://developer.yahoo.co.jp/webapi/shopping/"
+    }
+   ]
+  },
+  {
+   "slug": "yayoi",
+   "name": "弥生（会計/青色申告 オンライン/Next）",
+   "vendor": "弥生",
+   "category": "会計・税務",
+   "url": "https://renkeimap.jp/system/yayoi",
+   "surveyed_on": "2026-08-01",
+   "methods": [
+    {
+     "method": "csv_import",
+     "read": false,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-08-07",
+     "source_url": "https://support.yayoi-kk.co.jp/subcontents.html?page_id=29611"
+    }
+   ]
+  },
+  {
+   "slug": "zairyu-shinsei-online",
+   "name": "在留申請オンライン",
+   "vendor": "出入国在留管理庁",
+   "category": "士業・行政申請",
+   "url": "https://renkeimap.jp/system/zairyu-shinsei-online",
+   "surveyed_on": "2026-09-03",
+   "methods": []
+  },
+  {
+   "slug": "zoho-crm",
+   "name": "Zoho CRM",
+   "vendor": "ゾーホージャパン",
+   "category": "CRM / SFA / MA",
+   "url": "https://renkeimap.jp/system/zoho-crm",
+   "surveyed_on": "2026-08-05",
+   "methods": [
+    {
+     "method": "api",
+     "read": true,
+     "write": true,
+     "grade": 5,
+     "checked_on": "2026-08-19",
+     "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/"
+    }
+   ]
+  }
+ ]
+}

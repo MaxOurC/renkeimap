@@ -1,0 +1,728 @@
+{
+ "schema": 1,
+ "license": "CC-BY-4.0",
+ "attribution": "IT連携マップ（https://renkeimap.jp/）",
+ "about": "https://renkeimap.jp/",
+ "count": 79,
+ "specs": [
+  {
+   "slug": "andpad",
+   "name": "ANDPAD",
+   "kind": "api_spec",
+   "spec_url": "https://andpad.jp/products/api",
+   "basis": "measured",
+   "checked_on": "2026-09-18",
+   "url": "https://renkeimap.jp/system/andpad"
+  },
+  {
+   "slug": "bakuraku",
+   "name": "バクラク",
+   "kind": "api_spec",
+   "spec_url": "https://bakuraku.jp/terms/api-terms/",
+   "basis": "vendor",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/bakuraku"
+  },
+  {
+   "slug": "base",
+   "name": "BASE",
+   "kind": "api_spec",
+   "spec_url": "https://docs.thebase.in/api/",
+   "basis": "vendor",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/base"
+  },
+  {
+   "slug": "board",
+   "name": "board",
+   "kind": "api_spec",
+   "spec_url": "https://developers.the-board.jp/doc/",
+   "basis": "measured",
+   "checked_on": "2026-08-01",
+   "url": "https://renkeimap.jp/system/board"
+  },
+  {
+   "slug": "bownow",
+   "name": "BowNow",
+   "kind": "api_spec",
+   "spec_url": "https://developer.bownow.jp/jp/api/index.html",
+   "basis": "vendor",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/bownow"
+  },
+  {
+   "slug": "ccus",
+   "name": "CCUS",
+   "kind": "api_spec",
+   "spec_url": "https://www.auth.ccus.jp/p/about_system",
+   "basis": "vendor",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/ccus"
+  },
+  {
+   "slug": "chatwork",
+   "name": "Chatwork",
+   "kind": "api_spec",
+   "spec_url": "https://go.chatwork.com/ja/",
+   "basis": "measured",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/chatwork"
+  },
+  {
+   "slug": "clius",
+   "name": "CLIUS",
+   "kind": "api_spec",
+   "spec_url": "https://clius.jp/link/",
+   "basis": "measured",
+   "checked_on": "2026-08-14",
+   "url": "https://renkeimap.jp/system/clius"
+  },
+  {
+   "slug": "comiru",
+   "name": "Comiru",
+   "kind": "api_spec",
+   "spec_url": "https://comiru.co/features/",
+   "basis": "measured",
+   "checked_on": "2026-08-14",
+   "url": "https://renkeimap.jp/system/comiru"
+  },
+  {
+   "slug": "dotto-genka",
+   "name": "どっと原価",
+   "kind": "api_spec",
+   "spec_url": "https://www.kendweb.net/function/webapi/",
+   "basis": "measured",
+   "checked_on": "2026-08-14",
+   "url": "https://renkeimap.jp/system/dotto-genka"
+  },
+  {
+   "slug": "e-gov",
+   "name": "e-Gov電子申請",
+   "kind": "api_spec",
+   "spec_url": "https://developer.e-gov.go.jp/contents/specification/document-api/common.html",
+   "basis": "vendor",
+   "checked_on": "2026-08-10",
+   "url": "https://renkeimap.jp/system/e-gov"
+  },
+  {
+   "slug": "e-tax",
+   "name": "e-Tax",
+   "kind": "api_spec",
+   "spec_url": "https://www.e-tax.nta.go.jp/shiyo/shiyo3.htm",
+   "basis": "vendor",
+   "checked_on": "2026-08-05",
+   "url": "https://renkeimap.jp/system/e-tax"
+  },
+  {
+   "slug": "eltax-pcdesk",
+   "name": "eLTAX / PCdesk",
+   "kind": "api_spec",
+   "spec_url": "https://www.eltax.lta.go.jp/support/software/",
+   "basis": "vendor",
+   "checked_on": "2026-08-10",
+   "url": "https://renkeimap.jp/system/eltax-pcdesk"
+  },
+  {
+   "slug": "filemaker",
+   "name": "FileMaker",
+   "kind": "api_spec",
+   "spec_url": "https://help.claris.com/ja/data-api-guide/content/index.html",
+   "basis": "vendor",
+   "checked_on": "2026-09-10",
+   "url": "https://renkeimap.jp/system/filemaker"
+  },
+  {
+   "slug": "formrun",
+   "name": "formrun",
+   "kind": "api_spec",
+   "spec_url": "https://basicinc.jp/api-terms",
+   "basis": "vendor",
+   "checked_on": "2026-08-09",
+   "url": "https://renkeimap.jp/system/formrun"
+  },
+  {
+   "slug": "freee-jinji",
+   "name": "freee人事労務",
+   "kind": "api_spec",
+   "spec_url": "https://raw.githubusercontent.com/freee/freee-api-schema/master/hr/open-api-3/api-schema.json",
+   "basis": "measured",
+   "checked_on": "2026-08-02",
+   "url": "https://renkeimap.jp/system/freee-jinji"
+  },
+  {
+   "slug": "freee-jinji",
+   "name": "freee人事労務",
+   "kind": "mcp_server",
+   "spec_url": "https://mcp.freee.co.jp/mcp",
+   "basis": "vendor",
+   "source_url": "https://github.com/freee/freee-mcp",
+   "checked_on": "2026-10-10",
+   "url": "https://renkeimap.jp/system/freee-jinji"
+  },
+  {
+   "slug": "freee-kaikei",
+   "name": "freee会計",
+   "kind": "api_spec",
+   "spec_url": "https://github.com/freee/freee-api-schema",
+   "basis": "measured",
+   "checked_on": "2026-08-01",
+   "url": "https://renkeimap.jp/system/freee-kaikei"
+  },
+  {
+   "slug": "freee-kaikei",
+   "name": "freee会計",
+   "kind": "mcp_server",
+   "spec_url": "https://mcp.freee.co.jp/mcp",
+   "basis": "vendor",
+   "source_url": "https://github.com/freee/freee-mcp",
+   "checked_on": "2026-10-10",
+   "url": "https://renkeimap.jp/system/freee-kaikei"
+  },
+  {
+   "slug": "g-id",
+   "name": "GビズID",
+   "kind": "api_spec",
+   "spec_url": "https://gbiz-id.go.jp/top/system_guide/system_guide.html",
+   "basis": "vendor",
+   "checked_on": "2026-08-10",
+   "url": "https://renkeimap.jp/system/g-id"
+  },
+  {
+   "slug": "garoon",
+   "name": "Garoon",
+   "kind": "api_spec",
+   "spec_url": "https://cybozu.dev/ja/garoon/docs/rest-api/overview/",
+   "basis": "measured",
+   "checked_on": "2026-08-09",
+   "url": "https://renkeimap.jp/system/garoon"
+  },
+  {
+   "slug": "google-classroom",
+   "name": "Google Classroom",
+   "kind": "api_spec",
+   "spec_url": "https://developers.google.com/workspace/classroom/reference/rest?hl=ja",
+   "basis": "vendor",
+   "checked_on": "2026-08-10",
+   "url": "https://renkeimap.jp/system/google-classroom"
+  },
+  {
+   "slug": "google-forms",
+   "name": "Google フォーム",
+   "kind": "api_spec",
+   "spec_url": "https://developers.google.com/workspace/forms/api/guides?hl=ja",
+   "basis": "vendor",
+   "checked_on": "2026-08-09",
+   "url": "https://renkeimap.jp/system/google-forms"
+  },
+  {
+   "slug": "google-sheets",
+   "name": "Google スプレッドシート",
+   "kind": "api_spec",
+   "spec_url": "https://developers.google.com/workspace/sheets/api/guides/concepts?hl=ja",
+   "basis": "vendor",
+   "checked_on": "2026-08-09",
+   "url": "https://renkeimap.jp/system/google-sheets"
+  },
+  {
+   "slug": "google-sheets",
+   "name": "Google スプレッドシート",
+   "kind": "mcp_server",
+   "spec_url": "https://sheetsmcp.googleapis.com/mcp/v1",
+   "basis": "vendor",
+   "source_url": "https://developers.google.com/workspace/sheets/api/guides/configure-mcp-server",
+   "checked_on": "2026-08-26",
+   "url": "https://renkeimap.jp/system/google-sheets"
+  },
+  {
+   "slug": "google-workspace",
+   "name": "Google Workspace",
+   "kind": "api_spec",
+   "spec_url": "https://developers.google.com/workspace/guides/get-started?hl=ja",
+   "basis": "vendor",
+   "checked_on": "2026-08-09",
+   "url": "https://renkeimap.jp/system/google-workspace"
+  },
+  {
+   "slug": "greensite",
+   "name": "グリーンサイト",
+   "kind": "api_spec",
+   "spec_url": "https://aspicjapan.org/nintei/0034-0810/",
+   "basis": "measured",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/greensite"
+  },
+  {
+   "slug": "hubspot",
+   "name": "HubSpot",
+   "kind": "api_spec",
+   "spec_url": "https://developers.hubspot.com/docs/reference/api/overview",
+   "basis": "vendor",
+   "checked_on": "2026-08-09",
+   "url": "https://renkeimap.jp/system/hubspot"
+  },
+  {
+   "slug": "ielove-bb",
+   "name": "いえらぶBB",
+   "kind": "api_spec",
+   "spec_url": "https://bb.ielove.jp/",
+   "basis": "measured",
+   "checked_on": "2026-09-07",
+   "url": "https://renkeimap.jp/system/ielove-bb"
+  },
+  {
+   "slug": "invox",
+   "name": "invox",
+   "kind": "api_spec",
+   "spec_url": "https://invox.jp/api/",
+   "basis": "vendor",
+   "checked_on": "2026-08-09",
+   "url": "https://renkeimap.jp/system/invox"
+  },
+  {
+   "slug": "jcip",
+   "name": "JCIP（建設業許可電子申請）",
+   "kind": "api_spec",
+   "spec_url": "https://www1.mlit.go.jp/tochi_fudousan_kensetsugyo/const/tochi_fudousan_kensetsugyo_const_tk1_000001_00019.html",
+   "basis": "vendor",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/jcip"
+  },
+  {
+   "slug": "jgrants",
+   "name": "jGrants",
+   "kind": "api_spec",
+   "spec_url": "https://developers.digital.go.jp/documents/jgrants/api/",
+   "basis": "vendor",
+   "checked_on": "2026-08-09",
+   "url": "https://renkeimap.jp/system/jgrants"
+  },
+  {
+   "slug": "jidosha-oss",
+   "name": "自動車OSS",
+   "kind": "api_spec",
+   "spec_url": "https://www.oss.mlit.go.jp/secure/tetsuduki/lump/kiyaku-riyousha-id-issuing/index.html",
+   "basis": "measured",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/jidosha-oss"
+  },
+  {
+   "slug": "jinjer",
+   "name": "ジンジャー",
+   "kind": "api_spec",
+   "spec_url": "https://doc.api.jinjer.biz/openapi/openapi.yaml",
+   "basis": "measured",
+   "checked_on": "2026-08-02",
+   "url": "https://renkeimap.jp/system/jinjer"
+  },
+  {
+   "slug": "jobcan-kaikei",
+   "name": "ジョブカン会計",
+   "kind": "api_spec",
+   "spec_url": "https://sbx.ac.jobcan.jp/ascommon/api/api_doc.html",
+   "basis": "measured",
+   "checked_on": "2026-08-05",
+   "url": "https://renkeimap.jp/system/jobcan-kaikei"
+  },
+  {
+   "slug": "jobcan-kintai",
+   "name": "ジョブカン勤怠管理",
+   "kind": "api_spec",
+   "spec_url": "https://jobcan.zendesk.com/hc/ja/articles/12254738827545",
+   "basis": "vendor",
+   "checked_on": "2026-08-01",
+   "url": "https://renkeimap.jp/system/jobcan-kintai"
+  },
+  {
+   "slug": "jotform",
+   "name": "Jotform",
+   "kind": "api_spec",
+   "spec_url": "https://api.jotform.com/docs/",
+   "basis": "measured",
+   "checked_on": "2026-08-14",
+   "url": "https://renkeimap.jp/system/jotform"
+  },
+  {
+   "slug": "jotform",
+   "name": "Jotform",
+   "kind": "mcp_server",
+   "spec_url": "https://mcp.jotform.com",
+   "basis": "vendor",
+   "source_url": "https://www.jotform.com/mcp/",
+   "checked_on": "2026-08-26",
+   "url": "https://renkeimap.jp/system/jotform"
+  },
+  {
+   "slug": "kaonavi",
+   "name": "カオナビ",
+   "kind": "api_spec",
+   "spec_url": "https://developer.kaonavi.jp/api/v2.0/index.html",
+   "basis": "vendor",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/kaonavi"
+  },
+  {
+   "slug": "king-of-time",
+   "name": "KING OF TIME",
+   "kind": "api_spec",
+   "spec_url": "https://developer.kingoftime.jp/",
+   "basis": "measured",
+   "checked_on": "2026-08-02",
+   "url": "https://renkeimap.jp/system/king-of-time"
+  },
+  {
+   "slug": "kintone",
+   "name": "kintone",
+   "kind": "api_spec",
+   "spec_url": "https://github.com/kintone/rest-api-spec",
+   "basis": "measured",
+   "checked_on": "2026-08-04",
+   "url": "https://renkeimap.jp/system/kintone"
+  },
+  {
+   "slug": "kintone",
+   "name": "kintone",
+   "kind": "api_spec",
+   "spec_url": "https://cybozu.dev/ja/kintone/docs/rest-api/records/get-records/",
+   "basis": "vendor",
+   "checked_on": "2026-08-04",
+   "url": "https://renkeimap.jp/system/kintone"
+  },
+  {
+   "slug": "line-works",
+   "name": "LINE WORKS",
+   "kind": "api_spec",
+   "spec_url": "https://developers.worksmobile.com/jp/docs/api-call",
+   "basis": "vendor",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/line-works"
+  },
+  {
+   "slug": "microsoft-excel",
+   "name": "Microsoft Excel",
+   "kind": "api_spec",
+   "spec_url": "https://learn.microsoft.com/ja-jp/graph/api/resources/excel",
+   "basis": "measured",
+   "checked_on": "2026-09-09",
+   "url": "https://renkeimap.jp/system/microsoft-excel"
+  },
+  {
+   "slug": "microsoft-forms",
+   "name": "Microsoft Forms",
+   "kind": "api_spec",
+   "spec_url": "https://learn.microsoft.com/en-us/connectors/microsoftforms/",
+   "basis": "measured",
+   "checked_on": "2026-08-09",
+   "url": "https://renkeimap.jp/system/microsoft-forms"
+  },
+  {
+   "slug": "misoca",
+   "name": "Misoca",
+   "kind": "api_spec",
+   "spec_url": "https://doc.misoca.jp/",
+   "basis": "measured",
+   "checked_on": "2026-08-09",
+   "url": "https://renkeimap.jp/system/misoca"
+  },
+  {
+   "slug": "misoca",
+   "name": "Misoca",
+   "kind": "mcp_server",
+   "spec_url": "https://mcp.misoca.jp/mcp",
+   "basis": "vendor",
+   "source_url": "https://www.misoca.jp/blog/update_20260915",
+   "checked_on": "2026-09-29",
+   "url": "https://renkeimap.jp/system/misoca"
+  },
+  {
+   "slug": "moneyforward-cloud-jinji",
+   "name": "マネーフォワード クラウド人事管理",
+   "kind": "api_spec",
+   "spec_url": "https://developers.biz.moneyforward.com/docs/api",
+   "basis": "vendor",
+   "checked_on": "2026-08-14",
+   "url": "https://renkeimap.jp/system/moneyforward-cloud-jinji"
+  },
+  {
+   "slug": "moneyforward-cloud-kaikei",
+   "name": "マネーフォワード クラウド会計",
+   "kind": "api_spec",
+   "spec_url": "https://developers.biz.moneyforward.com/docs/common/api_common_specifications/",
+   "basis": "measured",
+   "checked_on": "2026-08-01",
+   "url": "https://renkeimap.jp/system/moneyforward-cloud-kaikei"
+  },
+  {
+   "slug": "moneyforward-cloud-kaikei",
+   "name": "マネーフォワード クラウド会計",
+   "kind": "mcp_server",
+   "spec_url": "https://beta.mcp.developers.biz.moneyforward.com/mcp/ca/v3",
+   "basis": "vendor",
+   "source_url": "https://biz.moneyforward.com/support/account/guide/others/ot10.html",
+   "checked_on": "2026-08-26",
+   "url": "https://renkeimap.jp/system/moneyforward-cloud-kaikei"
+  },
+  {
+   "slug": "moneyforward-cloud-keihi",
+   "name": "マネーフォワード クラウド経費",
+   "kind": "api_spec",
+   "spec_url": "https://expense.moneyforward.com/api/index.json",
+   "basis": "measured",
+   "checked_on": "2026-08-02",
+   "url": "https://renkeimap.jp/system/moneyforward-cloud-keihi"
+  },
+  {
+   "slug": "moneyforward-cloud-kyuyo",
+   "name": "マネーフォワード クラウド給与",
+   "kind": "api_spec",
+   "spec_url": "https://payroll.moneyforward.com/api/v2/schema",
+   "basis": "vendor",
+   "checked_on": "2026-08-09",
+   "url": "https://renkeimap.jp/system/moneyforward-cloud-kyuyo"
+  },
+  {
+   "slug": "moneyforward-cloud-seikyusho",
+   "name": "マネーフォワード クラウド請求書",
+   "kind": "api_spec",
+   "spec_url": "https://developers.biz.moneyforward.com/docs/common/api_common_specifications/",
+   "basis": "vendor",
+   "checked_on": "2026-08-10",
+   "url": "https://renkeimap.jp/system/moneyforward-cloud-seikyusho"
+  },
+  {
+   "slug": "moneyforward-cloud-shaho",
+   "name": "マネーフォワード クラウド社会保険",
+   "kind": "api_spec",
+   "spec_url": "https://biz.moneyforward.com/social_insurance/",
+   "basis": "measured",
+   "checked_on": "2026-09-08",
+   "url": "https://renkeimap.jp/system/moneyforward-cloud-shaho"
+  },
+  {
+   "slug": "movo-berth",
+   "name": "MOVO Berth",
+   "kind": "api_spec",
+   "spec_url": "https://hacobu.jp/api/",
+   "basis": "vendor",
+   "checked_on": "2026-08-10",
+   "url": "https://renkeimap.jp/system/movo-berth"
+  },
+  {
+   "slug": "notion",
+   "name": "Notion",
+   "kind": "api_spec",
+   "spec_url": "https://developers.notion.com/reference/intro",
+   "basis": "vendor",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/notion"
+  },
+  {
+   "slug": "notion",
+   "name": "Notion",
+   "kind": "mcp_server",
+   "spec_url": "https://mcp.notion.com/mcp",
+   "basis": "vendor",
+   "source_url": "https://developers.notion.com/docs/get-started-with-mcp",
+   "checked_on": "2026-08-26",
+   "url": "https://renkeimap.jp/system/notion"
+  },
+  {
+   "slug": "nyusatsu-joho-service",
+   "name": "入札情報サービス（電子入札コア系）",
+   "kind": "api_spec",
+   "spec_url": "https://www.cals.jacic.or.jp/coresc/index.html",
+   "basis": "measured",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/nyusatsu-joho-service"
+  },
+  {
+   "slug": "nyusatsu-joho-service",
+   "name": "入札情報サービス（電子入札コア系）",
+   "kind": "api_spec",
+   "spec_url": "https://www.cals.jacic.or.jp/coreconso/flow/step0401.html",
+   "basis": "vendor",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/nyusatsu-joho-service"
+  },
+  {
+   "slug": "office-station",
+   "name": "オフィスステーション",
+   "kind": "api_spec",
+   "spec_url": "https://www.officestation.jp/roumu/function/",
+   "basis": "measured",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/office-station"
+  },
+  {
+   "slug": "pittari-service",
+   "name": "ぴったりサービス",
+   "kind": "api_spec",
+   "spec_url": "https://developers.digital.go.jp/documents/mynaportal-api/specification/eshinsei/",
+   "basis": "vendor",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/pittari-service"
+  },
+  {
+   "slug": "rakuraku-seisan",
+   "name": "楽楽精算",
+   "kind": "api_spec",
+   "spec_url": "https://success-navi.rakurakucloud.jp/seisan/option/detail/4008",
+   "basis": "vendor",
+   "checked_on": "2026-08-01",
+   "url": "https://renkeimap.jp/system/rakuraku-seisan"
+  },
+  {
+   "slug": "salesforce-platform",
+   "name": "Salesforce Platform",
+   "kind": "api_spec",
+   "spec_url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm",
+   "basis": "vendor",
+   "checked_on": "2026-08-10",
+   "url": "https://renkeimap.jp/system/salesforce-platform"
+  },
+  {
+   "slug": "salesforce-sales-cloud",
+   "name": "Salesforce Sales Cloud",
+   "kind": "api_spec",
+   "spec_url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm",
+   "basis": "vendor",
+   "checked_on": "2026-08-10",
+   "url": "https://renkeimap.jp/system/salesforce-sales-cloud"
+  },
+  {
+   "slug": "sansan",
+   "name": "Sansan",
+   "kind": "api_spec",
+   "spec_url": "https://docs.ap.sansan.com/ja/api/index.html",
+   "basis": "vendor",
+   "checked_on": "2026-09-18",
+   "url": "https://renkeimap.jp/system/sansan"
+  },
+  {
+   "slug": "shopify",
+   "name": "Shopify",
+   "kind": "api_spec",
+   "spec_url": "https://shopify.dev/docs/api/admin-rest",
+   "basis": "vendor",
+   "checked_on": "2026-08-09",
+   "url": "https://renkeimap.jp/system/shopify"
+  },
+  {
+   "slug": "slack",
+   "name": "Slack",
+   "kind": "api_spec",
+   "spec_url": "https://api.slack.com/apis",
+   "basis": "vendor",
+   "checked_on": "2026-08-09",
+   "url": "https://renkeimap.jp/system/slack"
+  },
+  {
+   "slug": "slack",
+   "name": "Slack",
+   "kind": "mcp_server",
+   "spec_url": "https://mcp.slack.com/mcp",
+   "basis": "vendor",
+   "source_url": "https://docs.slack.dev/ai/slack-mcp-server/",
+   "checked_on": "2026-08-26",
+   "url": "https://renkeimap.jp/system/slack"
+  },
+  {
+   "slug": "smarthr",
+   "name": "SmartHR",
+   "kind": "api_spec",
+   "spec_url": "https://app.smarthr.jp/api/v1/swagger_doc",
+   "basis": "measured",
+   "checked_on": "2026-08-01",
+   "url": "https://renkeimap.jp/system/smarthr"
+  },
+  {
+   "slug": "tkc-fx2-cloud",
+   "name": "TKC FX2クラウド",
+   "kind": "api_spec",
+   "spec_url": "https://www.tkc.jp/api/renkei/",
+   "basis": "measured",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/tkc-fx2-cloud"
+  },
+  {
+   "slug": "tkc-kaikei",
+   "name": "TKC 会計事務所システム",
+   "kind": "api_spec",
+   "spec_url": "https://www.tkc.jp/ao/system/",
+   "basis": "vendor",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/tkc-kaikei"
+  },
+  {
+   "slug": "tokium",
+   "name": "TOKIUM",
+   "kind": "api_spec",
+   "spec_url": "https://www.keihi.com/expense/",
+   "basis": "measured",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/tokium"
+  },
+  {
+   "slug": "touki-net",
+   "name": "登記ねっと",
+   "kind": "api_spec",
+   "spec_url": "https://t-k-download.moj.go.jp/application/developer/api_webservice.pdf",
+   "basis": "vendor",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/touki-net"
+  },
+  {
+   "slug": "touki-net",
+   "name": "登記ねっと",
+   "kind": "api_spec",
+   "spec_url": "https://t-k-download.moj.go.jp/application/developer/api_webservice_reference.pdf",
+   "basis": "vendor",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/touki-net"
+  },
+  {
+   "slug": "touki-net",
+   "name": "登記ねっと",
+   "kind": "api_spec",
+   "spec_url": "https://t-k-download.moj.go.jp/application/developer/api_webservice_reference.pdf",
+   "basis": "measured",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/touki-net"
+  },
+  {
+   "slug": "yahoo-pro",
+   "name": "Yahoo!ショッピング ストアクリエイターPro",
+   "kind": "api_spec",
+   "spec_url": "https://developer.yahoo.co.jp/webapi/shopping/",
+   "basis": "measured",
+   "checked_on": "2026-08-05",
+   "url": "https://renkeimap.jp/system/yahoo-pro"
+  },
+  {
+   "slug": "yayoi",
+   "name": "弥生（会計/青色申告 オンライン/Next）",
+   "kind": "api_spec",
+   "spec_url": "https://support.yayoi-kk.co.jp/subcontents.html?page_id=18435",
+   "basis": "vendor",
+   "checked_on": "2026-08-01",
+   "url": "https://renkeimap.jp/system/yayoi"
+  },
+  {
+   "slug": "zairyu-shinsei-online",
+   "name": "在留申請オンライン",
+   "kind": "api_spec",
+   "spec_url": "https://www.moj.go.jp/isa/content/001460001.pdf",
+   "basis": "vendor",
+   "checked_on": "2026-09-03",
+   "url": "https://renkeimap.jp/system/zairyu-shinsei-online"
+  },
+  {
+   "slug": "zoho-crm",
+   "name": "Zoho CRM",
+   "kind": "api_spec",
+   "spec_url": "https://www.zoho.com/crm/developer/docs/api/v8/",
+   "basis": "measured",
+   "checked_on": "2026-08-05",
+   "url": "https://renkeimap.jp/system/zoho-crm"
+  }
+ ]
+}
