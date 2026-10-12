@@ -9,6 +9,20 @@ A third-party ledger of Japanese business systems. Every fact carries a source U
 read-only, needs no account or key, and sees only the tool arguments (system names or slugs) — never put personal or
 company data into them.
 
+## 0. Keys and environment variables — before anything else
+
+The machine you run on may hold more keys than this task needs. A key you can see is not a key you may use.
+
+1. Check whether a variable is set without printing it: `[ -n "$NAME" ] && echo set`. Never run `env`, `printenv`,
+   `echo $NAME` or `cat .env` — they put the value into the conversation, and the conversation is stored.
+2. Use only the keys this task names. Ignore every other key you can see.
+3. Never write a key or token value into a command line, a file you create, or the chat. Never ask the user to paste one
+   in the chat — the user puts it in an environment variable.
+4. Stay inside the working folder. Do not open parent folders, home-directory files (`.zshrc`, `.env`) or your client's
+   settings files to look for keys — they can hold keys for other systems.
+5. If a call fails with 401 or 403, stop and tell the user which key or permission is missing. Do not try another key.
+6. After writing, read the target back before you report (step 2-4, `write_rules`).
+
 ## 1. Tools available?
 
 Tools whose names contain `renkeimap_` (any prefix, e.g. `mcp__renkeimap__renkeimap_plan`) are connected — go to step 2.
@@ -37,10 +51,8 @@ commands and changes nothing unless run with `--apply`).
    The sign-in steps for a remote line are in `clients_remote_steps`.
 3. `human` lists, per route, the steps only the user can do — the best route first (`route.legend` says what the
    `api`／`csv`／`fill` values mean). Follow the first line that your client can use, and ask the user only for those
-   steps (for example "approve once in the browser", "issue an API token with レコード閲覧 only"). Check that a
-   variable is set with `[ -n "$NAME" ] && echo set` — never run `env`, `printenv` or `echo $NAME`, which print the
-   value, and do not open your client's settings files (they can hold keys). Never ask for a key or token in the chat.
-   If the line you take points to `renkeimap_connect`, call it once for that side with the short default (no `detail`).
+   steps (for example "approve once in the browser", "issue an API token with レコード閲覧 only"). Handle every key
+   as in section 0. If the line you take points to `renkeimap_connect`, call it once for that side with the short default (no `detail`).
    Do not ask for `detail:"full"`.
 4. Follow every item of `write_rules` before and while writing, and report the way it says. Cite the `source` line.
 
